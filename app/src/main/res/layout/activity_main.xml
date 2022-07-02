@@ -28,14 +28,13 @@
             android:id="@+id/cardView_npv"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:background="@color/white"
             android:backgroundTint="@color/pink"
             app:cardBackgroundColor="@color/grey"
             app:cardCornerRadius="24dp"
             app:layout_constraintEnd_toEndOf="@+id/cardView2"
             app:layout_constraintStart_toEndOf="@+id/cardView_pp"
-            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+            app:layout_constraintTop_toTopOf="@+id/cardView_pp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -61,7 +60,9 @@
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Net Present"
+
                     android:textColor="@color/white"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/text_main_netPresentValue"
                     app:layout_constraintStart_toStartOf="@+id/text_main_netPresentValue"
                     app:layout_constraintTop_toBottomOf="@+id/text_main_netPresentValue" />
@@ -70,10 +71,11 @@
                     android:id="@+id/text_second_2_netPresentValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:fontFamily="@font/montserrat_medium"
+
                     android:text="Value"
                     android:textColor="@color/white"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/text_second_1_netPresentValue"
                     app:layout_constraintStart_toStartOf="@+id/text_second_1_netPresentValue"
                     app:layout_constraintTop_toBottomOf="@+id/text_second_1_netPresentValue" />
@@ -90,11 +92,11 @@
             app:cardCornerRadius="24dp"
             app:layout_constraintEnd_toStartOf="@+id/cardView_npv"
             app:layout_constraintStart_toStartOf="@+id/cardView2"
-            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+            app:layout_constraintTop_toBottomOf="@+id/switch1">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginVertical="12dp">
 
                 <TextView
@@ -117,6 +119,7 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Payback"
                     android:textColor="@color/white"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/text_main_paybackPeriod"
                     app:layout_constraintStart_toStartOf="@+id/text_main_paybackPeriod"
                     app:layout_constraintTop_toBottomOf="@+id/text_main_paybackPeriod" />
@@ -128,6 +131,7 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Period"
                     android:textColor="@color/white"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/text_second_1_paybackPeriod"
                     app:layout_constraintStart_toStartOf="@+id/text_second_1_paybackPeriod"
                     app:layout_constraintTop_toBottomOf="@+id/text_second_1_paybackPeriod" />
@@ -182,6 +186,7 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Internal Rate"
                     android:textColor="@color/white"
+                    android:textSize="14sp"
 
                     app:layout_constraintEnd_toEndOf="@+id/text_main_internalRateReturn"
                     app:layout_constraintStart_toStartOf="@+id/text_main_internalRateReturn"
@@ -194,6 +199,7 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="of Return"
                     android:textColor="@color/white"
+                    android:textSize="14sp"
 
                     app:layout_constraintEnd_toEndOf="@+id/text_second_1_internalRateReturn"
                     app:layout_constraintStart_toStartOf="@+id/text_second_1_internalRateReturn"
@@ -323,6 +329,7 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Profitability"
                     android:textColor="@color/white"
+                    android:textSize="14sp"
 
                     app:layout_constraintEnd_toEndOf="@+id/text_main_profitabilityIndex"
                     app:layout_constraintStart_toStartOf="@+id/text_main_profitabilityIndex"
@@ -335,6 +342,7 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Index"
                     android:textColor="@color/white"
+                    android:textSize="14sp"
 
                     app:layout_constraintEnd_toEndOf="@+id/text_second_1_profitabilityIndex"
                     app:layout_constraintStart_toStartOf="@+id/text_second_1_profitabilityIndex"
@@ -382,6 +390,8 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Using 4 Method PP, NPV, PI and IRR"
                     android:textColor="@color/white"
+                    android:textSize="14sp"
+
                     app:layout_constraintEnd_toEndOf="@+id/text_main_fourMethod"
                     app:layout_constraintStart_toStartOf="@+id/text_main_fourMethod"
                     app:layout_constraintTop_toBottomOf="@+id/text_main_fourMethod" />
@@ -393,6 +403,8 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="to find the best investment"
                     android:textColor="@color/white"
+                    android:textSize="14sp"
+
                     app:layout_constraintEnd_toEndOf="@+id/text_second_1_fourMethod"
                     app:layout_constraintStart_toStartOf="@+id/text_second_1_fourMethod"
                     app:layout_constraintTop_toBottomOf="@+id/text_second_1_fourMethod" />
@@ -427,5 +439,43 @@
             app:layout_constraintEnd_toEndOf="@+id/textView4"
             app:layout_constraintStart_toStartOf="@+id/textView4"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Stable Cash Flow"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/switch1"
+            app:layout_constraintEnd_toStartOf="@+id/switch1"
+            app:layout_constraintStart_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toTopOf="@+id/switch1" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text=""
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Different Cash Flow"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/switch1"
+            app:layout_constraintEnd_toEndOf="@+id/cardView2"
+            app:layout_constraintStart_toEndOf="@+id/switch1"
+            app:layout_constraintTop_toTopOf="@+id/switch1" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
