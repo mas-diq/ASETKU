@@ -82,8 +82,6 @@ class NetPresentValueStableResult : AppCompatActivity() {
                 binding.result.tvPerusahaan3Value.text = "Net Present Value = $$result_3 (feasible)"
             }
 
-
-
             if (commpany_1 >= commpany_2 && commpany_1 >= commpany_3) {
                 binding.recommendation.textValue.text = getString(R.string.company_1)
             } else if (commpany_2 >= commpany_3) {
@@ -97,7 +95,7 @@ class NetPresentValueStableResult : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.M)
     private fun changeData() {
         binding.header.textView.text = getString(R.string.stable_title)
-        binding.recommendation.card.setBackgroundColor(getColor(R.color.pink))
+        binding.recommendation.card.setBackgroundColor(getColor(R.color.yellow))
     }
 
     private fun back() {

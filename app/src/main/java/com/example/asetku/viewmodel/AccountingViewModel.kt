@@ -25,4 +25,14 @@ class AccountingViewModel : ViewModel() {
     fun NPVstableCount(ii: Double, cf: Double, y: Double, dr: Double): Double {
         return ((cf / (1 + dr / 100).pow(y)) - ii)
     }
+
+    fun NPVdifferentCount(
+        ii: Double,
+        dr: Double,
+        cf1: Double,
+        cf2: Double,
+        cf3: Double
+    ): Double {
+        return ((cf1 / (1 + dr / 100)) + (cf2 / (1 + dr / 100).pow(2)) + (cf3 / (1 + dr / 100).pow(3)) - ii)
+    }
 }
