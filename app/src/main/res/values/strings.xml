@@ -28,4 +28,5 @@
     <string name="back_to_home">Back to Home</string>
     <string name="template_value">Insert Value</string>
     <string name="the_best_investment">The best investment, goes to</string>
+    <string name="calculating">Calculating...</string>
 </resources>

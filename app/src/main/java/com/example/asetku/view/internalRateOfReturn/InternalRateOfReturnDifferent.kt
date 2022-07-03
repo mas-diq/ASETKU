@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityInternalRateOfReturnDifferentBinding
+import com.example.asetku.view.LoadingScreen
 import com.example.asetku.view.MainActivity
 
 class InternalRateOfReturnDifferent : AppCompatActivity() {
@@ -33,9 +34,10 @@ class InternalRateOfReturnDifferent : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val move = Intent(this, InternalRateOfReturnDifferentResult::class.java)
+                val move = Intent(this, LoadingScreen::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
+                    putString("dir", "irrDifferent")
                     // Structures ..._company_npv
                     // Company 1 NPV 1
                     putString(

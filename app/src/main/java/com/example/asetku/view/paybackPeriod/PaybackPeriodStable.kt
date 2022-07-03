@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityPaybackPeriodStableBinding
+import com.example.asetku.view.LoadingScreen
 import com.example.asetku.view.MainActivity
 
 class PaybackPeriodStable : AppCompatActivity() {
@@ -39,9 +40,10 @@ class PaybackPeriodStable : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val move = Intent(this, PaybackPeriodStableResult::class.java)
+                val move = Intent(this, LoadingScreen::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
+                    putString("dir", "ppStable")
                     putString(
                         "initialInvestment_1",
                         binding.input1.textField1.textEdit.text.toString()

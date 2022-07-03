@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityProfitabilityIndexMainDifferentBinding
+import com.example.asetku.view.LoadingScreen
 import com.example.asetku.view.MainActivity
 
 class ProfitabilityIndexDifferent : AppCompatActivity() {
@@ -68,9 +69,10 @@ class ProfitabilityIndexDifferent : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val move = Intent(this, ProfitabilityIndexDifferentResult::class.java)
+                val move = Intent(this, LoadingScreen::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
+                    putString("dir", "piDifferent")
                     putString(
                         "initialInvestment_1",
                         binding.input1.textField1.textEdit.text.toString()

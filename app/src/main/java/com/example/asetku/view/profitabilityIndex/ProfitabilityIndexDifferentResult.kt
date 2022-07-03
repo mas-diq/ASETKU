@@ -111,6 +111,7 @@ class ProfitabilityIndexDifferentResult : AppCompatActivity() {
         binding.btnBack.button.setOnClickListener {
             val move = Intent(this, MainActivity::class.java)
             startActivity(move)
+            finish()
         }
     }
 }
