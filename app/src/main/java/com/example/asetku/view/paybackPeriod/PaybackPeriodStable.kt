@@ -37,8 +37,7 @@ class PaybackPeriodStable : AppCompatActivity() {
                     applicationContext,
                     "All value need to be filled!",
                     Toast.LENGTH_SHORT
-                )
-                    .show()
+                ).show()
             } else {
                 val move = Intent(this, PaybackPeriodStableResult::class.java)
                 val bundleData = Bundle()
