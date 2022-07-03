@@ -34,7 +34,7 @@ class ProfitabilityIndexDifferentResult : AppCompatActivity() {
     private fun getData(extras: Bundle?) {
         if (extras != null) {
             val commpany_1: Double = viewModel.PIdifferentCount(
-                extras?.getString("initialInvestment_1")!!.toDouble(),
+                extras.getString("initialInvestment_1")!!.toDouble(),
                 extras.getString("discountRate_1")!!.toDouble(),
                 extras.getString("cash_flow_1_1")!!.toDouble(),
                 extras.getString("cash_flow_1_2")!!.toDouble(),
@@ -42,7 +42,7 @@ class ProfitabilityIndexDifferentResult : AppCompatActivity() {
 
             )
             val commpany_2: Double = viewModel.PIdifferentCount(
-                extras?.getString("initialInvestment_2")!!.toDouble(),
+                extras.getString("initialInvestment_2")!!.toDouble(),
                 extras.getString("discountRate_2")!!.toDouble(),
                 extras.getString("cash_flow_2_1")!!.toDouble(),
                 extras.getString("cash_flow_2_2")!!.toDouble(),
@@ -50,7 +50,7 @@ class ProfitabilityIndexDifferentResult : AppCompatActivity() {
 
             )
             val commpany_3: Double = viewModel.PIdifferentCount(
-                extras?.getString("initialInvestment_3")!!.toDouble(),
+                extras.getString("initialInvestment_3")!!.toDouble(),
                 extras.getString("discountRate_3")!!.toDouble(),
                 extras.getString("cash_flow_3_1")!!.toDouble(),
                 extras.getString("cash_flow_3_2")!!.toDouble(),
@@ -104,7 +104,7 @@ class ProfitabilityIndexDifferentResult : AppCompatActivity() {
     }
 
     private fun back() {
-        binding.header.iconBack.setOnClickListener() {
+        binding.header.iconBack.setOnClickListener {
             val move = Intent(this, ProfitabilityIndexDifferent::class.java)
             startActivity(move)
         }

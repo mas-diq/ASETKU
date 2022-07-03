@@ -54,7 +54,7 @@ class PaybackPeriodDifferent : AppCompatActivity() {
     }
 
     private fun back() {
-        binding.header.iconBack.setOnClickListener() {
+        binding.header.iconBack.setOnClickListener {
             val move = Intent(this, MainActivity::class.java)
             startActivity(move)
         }

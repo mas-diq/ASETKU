@@ -35,7 +35,7 @@ class InternalRateOfReturnStableResult : AppCompatActivity() {
     private fun getData(extras: Bundle?) {
         if (extras != null) {
             val commpany_1: Double = viewModel.IRRstableCount(
-                extras?.getString("initialInvestment_1_1")!!.toDouble(),
+                extras.getString("initialInvestment_1_1")!!.toDouble(),
                 extras.getString("cashFlow_1_1")!!.toDouble(),
                 extras.getString("year_1_1")!!.toDouble(),
                 extras.getString("discountRate_1_1")!!.toDouble(),
@@ -46,7 +46,7 @@ class InternalRateOfReturnStableResult : AppCompatActivity() {
 
             )
             val commpany_2: Double = viewModel.IRRstableCount(
-                extras?.getString("initialInvestment_2_1")!!.toDouble(),
+                extras.getString("initialInvestment_2_1")!!.toDouble(),
                 extras.getString("cashFlow_2_1")!!.toDouble(),
                 extras.getString("year_2_1")!!.toDouble(),
                 extras.getString("discountRate_2_1")!!.toDouble(),
@@ -57,7 +57,7 @@ class InternalRateOfReturnStableResult : AppCompatActivity() {
 
             )
             val commpany_3: Double = viewModel.IRRstableCount(
-                extras?.getString("initialInvestment_3_1")!!.toDouble(),
+                extras.getString("initialInvestment_3_1")!!.toDouble(),
                 extras.getString("cashFlow_3_1")!!.toDouble(),
                 extras.getString("year_3_1")!!.toDouble(),
                 extras.getString("discountRate_3_1")!!.toDouble(),
@@ -114,7 +114,7 @@ class InternalRateOfReturnStableResult : AppCompatActivity() {
     }
 
     private fun back() {
-        binding.header.iconBack.setOnClickListener() {
+        binding.header.iconBack.setOnClickListener {
             val move = Intent(this, InternalRateOfReturnStable::class.java)
             startActivity(move)
         }

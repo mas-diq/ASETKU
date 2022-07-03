@@ -35,7 +35,7 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
     private fun getData(extras: Bundle?) {
         if (extras != null) {
             val commpany_1: Double = viewModel.PPdifferentCount(
-                extras?.getString("initialInvestment_1")!!.toDouble(),
+                extras.getString("initialInvestment_1")!!.toDouble(),
                 extras.getString("discountRate_1")!!.toDouble(),
                 extras.getString("cash_flow_1_1")!!.toDouble(),
                 extras.getString("cash_flow_1_2")!!.toDouble(),
@@ -43,7 +43,7 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
 
             )
             val commpany_2: Double = viewModel.PPdifferentCount(
-                extras?.getString("initialInvestment_2")!!.toDouble(),
+                extras.getString("initialInvestment_2")!!.toDouble(),
                 extras.getString("discountRate_2")!!.toDouble(),
                 extras.getString("cash_flow_2_1")!!.toDouble(),
                 extras.getString("cash_flow_2_2")!!.toDouble(),
@@ -51,7 +51,7 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
 
             )
             val commpany_3: Double = viewModel.PPdifferentCount(
-                extras?.getString("initialInvestment_3")!!.toDouble(),
+                extras.getString("initialInvestment_3")!!.toDouble(),
                 extras.getString("discountRate_3")!!.toDouble(),
                 extras.getString("cash_flow_3_1")!!.toDouble(),
                 extras.getString("cash_flow_3_2")!!.toDouble(),
@@ -100,7 +100,7 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
     }
 
     private fun back() {
-        binding.header.iconBack.setOnClickListener() {
+        binding.header.iconBack.setOnClickListener {
             val move = Intent(this, PaybackPeriodDifferent::class.java)
             startActivity(move)
         }

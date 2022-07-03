@@ -35,21 +35,21 @@ class ProfitabilityIndexStableResult : AppCompatActivity() {
     private fun getData(extras: Bundle?) {
         if (extras != null) {
             val commpany_1: Double = viewModel.PIstableCount(
-                extras?.getString("initialInvestment_1")!!.toDouble(),
+                extras.getString("initialInvestment_1")!!.toDouble(),
                 extras.getString("cashFlow_1")!!.toDouble(),
                 extras.getString("year_1")!!.toDouble(),
                 extras.getString("discountRate_1")!!.toDouble()
 
             )
             val commpany_2: Double = viewModel.PIstableCount(
-                extras?.getString("initialInvestment_2")!!.toDouble(),
+                extras.getString("initialInvestment_2")!!.toDouble(),
                 extras.getString("cashFlow_2")!!.toDouble(),
                 extras.getString("year_2")!!.toDouble(),
                 extras.getString("discountRate_2")!!.toDouble()
 
             )
             val commpany_3: Double = viewModel.PIstableCount(
-                extras?.getString("initialInvestment_3")!!.toDouble(),
+                extras.getString("initialInvestment_3")!!.toDouble(),
                 extras.getString("cashFlow_3")!!.toDouble(),
                 extras.getString("year_3")!!.toDouble(),
                 extras.getString("discountRate_3")!!.toDouble()
@@ -102,7 +102,7 @@ class ProfitabilityIndexStableResult : AppCompatActivity() {
     }
 
     private fun back() {
-        binding.header.iconBack.setOnClickListener() {
+        binding.header.iconBack.setOnClickListener {
             val move = Intent(this, ProfitabilityIndexStable::class.java)
             startActivity(move)
         }
