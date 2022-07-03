@@ -34,10 +34,10 @@ class MainActivity : AppCompatActivity() {
     private fun moveToIRR() {
         binding.cardViewIrr.setOnClickListener {
             if (binding.switch1.isChecked) {
-                val move = Intent(this, InternalRateOfReturnStable::class.java)
+                val move = Intent(this, InternalRateOfReturnDifferent::class.java)
                 startActivity(move)
             } else {
-                val move = Intent(this, InternalRateOfReturnDifferent::class.java)
+                val move = Intent(this, InternalRateOfReturnStable::class.java)
                 startActivity(move)
             }
         }

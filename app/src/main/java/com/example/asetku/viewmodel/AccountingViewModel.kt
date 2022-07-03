@@ -35,4 +35,20 @@ class AccountingViewModel : ViewModel() {
     ): Double {
         return ((cf1 / (1 + dr / 100)) + (cf2 / (1 + dr / 100).pow(2)) + (cf3 / (1 + dr / 100).pow(3)) - ii)
     }
+
+    fun PIstableCount(ii: Double, cf: Double, y: Double, dr: Double): Double {
+        val npv = NPVstableCount(ii, cf, y, dr)
+        return (1 + (npv / ii))
+    }
+
+    fun PIdifferentCount(
+        ii: Double,
+        dr: Double,
+        cf1: Double,
+        cf2: Double,
+        cf3: Double
+    ): Double {
+        val npv = NPVdifferentCount(ii, dr, cf1, cf2, cf3)
+        return (1 + (npv / ii))
+    }
 }
