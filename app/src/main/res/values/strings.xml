@@ -18,6 +18,12 @@
     <string name="company_1">Company 1</string>
     <string name="company_2">Company 2</string>
     <string name="company_3">Company 3</string>
+    <string name="company_1_1">Company 1 NPV 1</string>
+    <string name="company_1_2">Company 1 NPV 2</string>
+    <string name="company_2_1">Company 2 NPV 1</string>
+    <string name="company_2_2">Company 2 NPV 2</string>
+    <string name="company_3_1">Company 3 NPV 1</string>
+    <string name="company_3_2">Company 3 NPV 2</string>
     <string name="calculate">Calculate</string>
     <string name="back_to_home">Back to Home</string>
     <string name="template_value">Insert Value</string>
