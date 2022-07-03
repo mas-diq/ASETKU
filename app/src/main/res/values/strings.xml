@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">ASETKU</string>
     <string name="asetku">ASETKU</string>
+    <string name="recommendation">*These results are obtained from calculations using the previously selected method</string>
+    <string name="stable_title">Stable Cash Flow</string>
+    <string name="different_title">Different Cash Flow</string>
+    <string name="initial_investment">Initial Investment</string>
+    <string name="cash_flow">Cash Flow</string>
+    <string name="year">Years</string>
+    <string name="year_1">Years 1</string>
+    <string name="year_2">Years 2</string>
+    <string name="year_3">Years 3</string>
+    <string name="company_1">Company 1</string>
+    <string name="company_2">Company 2</string>
+    <string name="company_3">Company 3</string>
+    <string name="calculate">Calculate</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="template_value">Insert Value</string>
+    <string name="cash_flow_1">Cash Flow 1</string>
+    <string name="the_best_investment">The best investment, goes to</string>
 </resources>

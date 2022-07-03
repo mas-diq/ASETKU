@@ -14,43 +14,49 @@
         android:theme="@style/Theme.ASETKU"
         tools:targetApi="31">
         <activity
-            android:name=".InternalRateOfReturnArticle"
+            android:name=".view.paybackPeriod.PaybackPeriodDifferentResult"
             android:exported="false" />
         <activity
-            android:name=".InternalRateOfReturnDifferent"
+            android:name=".view.internalRateOfReturn.InternalRateOfReturnArticle"
             android:exported="false" />
         <activity
-            android:name=".InternalRateOfReturnStable"
+            android:name=".view.internalRateOfReturn.InternalRateOfReturnDifferent"
             android:exported="false" />
         <activity
-            android:name=".NetPresentValueDifferent"
+            android:name=".view.internalRateOfReturn.InternalRateOfReturnStable"
             android:exported="false" />
         <activity
-            android:name=".NetPresentValueStable"
+            android:name=".view.netPresentValue.NetPresentValueArticle"
             android:exported="false" />
         <activity
-            android:name=".NetPresentValueArticle"
+            android:name=".view.netPresentValue.NetPresentValueDifferent"
             android:exported="false" />
         <activity
-            android:name=".PaybackPeriodMainDifferent"
+            android:name=".view.netPresentValue.NetPresentValueStable"
             android:exported="false" />
         <activity
-            android:name=".PaybackPeriodMainStable"
+            android:name=".view.paybackPeriod.PaybackPeriodStable"
+            android:exported="true" />
+        <activity
+            android:name=".view.paybackPeriod.PaybackPeriodDifferent"
+            android:exported="true" />
+        <activity
+            android:name=".view.paybackPeriod.PaybackPeriodArticle"
             android:exported="false" />
         <activity
-            android:name=".PaybackPeriodMainArticle"
+            android:name=".view.paybackPeriod.PaybackPeriodStableResult"
             android:exported="false" />
         <activity
-            android:name=".profitability_index_main_different"
+            android:name=".view.profitabilityIndex.ProfitabilityIndexArticle"
             android:exported="false" />
         <activity
-            android:name=".profitability_index_article"
+            android:name=".view.profitabilityIndex.ProfitabilityIndexDifferent"
             android:exported="false" />
         <activity
-            android:name=".profitability_index_main"
+            android:name=".view.profitabilityIndex.ProfitabilityIndexStable"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".view.SplashScreen"
             android:exported="false" />
         <activity
             android:name=".view.MainActivity"
