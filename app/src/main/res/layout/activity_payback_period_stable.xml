@@ -32,7 +32,7 @@
 
         <include
             android:id="@+id/header_two"
-            layout="@layout/header_two_layout"
+            layout="@layout/header_pp_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"

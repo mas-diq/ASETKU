@@ -7,9 +7,14 @@
     <string name="initial_investment">Initial Investment</string>
     <string name="cash_flow">Cash Flow</string>
     <string name="year">Years</string>
+    <string name="discount_rate">Discount Rate</string>
     <string name="cash_flow_1">Cash Flow 1</string>
     <string name="cash_flow_2">Cash Flow 2</string>
     <string name="cash_flow_3">Cash Flow 3</string>
+    <string name="pp">Payback Period</string>
+    <string name="npv">Net Present Value</string>
+    <string name="pi">Profitability Index</string>
+    <string name="irr">Internal Rate of Return</string>
     <string name="company_1">Company 1</string>
     <string name="company_2">Company 2</string>
     <string name="company_3">Company 3</string>

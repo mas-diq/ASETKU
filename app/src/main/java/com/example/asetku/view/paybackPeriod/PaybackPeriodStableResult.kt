@@ -8,16 +8,16 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityPaybackPeriodStableResultBinding
 import com.example.asetku.view.MainActivity
-import com.example.asetku.viewmodel.PpViewModel
+import com.example.asetku.viewmodel.AccountingViewModel
 
 class PaybackPeriodStableResult : AppCompatActivity() {
 
     private lateinit var binding: ActivityPaybackPeriodStableResultBinding
-    private lateinit var viewModel: PpViewModel
+    private lateinit var viewModel: AccountingViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel = ViewModelProvider(this)[PpViewModel::class.java]
+        viewModel = ViewModelProvider(this)[AccountingViewModel::class.java]
         binding = ActivityPaybackPeriodStableResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
         actionBar?.hide()
@@ -30,19 +30,19 @@ class PaybackPeriodStableResult : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     private fun getData(extras: Bundle?) {
         if (extras != null) {
-            val commpany_1: Double = viewModel.stableCount(
+            val commpany_1: Double = viewModel.PPstableCount(
                 extras?.getString("initialInvestment_1")!!.toDouble(),
                 extras.getString("cashFlow_1")!!.toDouble(),
                 extras.getString("year_1")!!.toDouble()
 
             )
-            val commpany_2: Double = viewModel.stableCount(
+            val commpany_2: Double = viewModel.PPstableCount(
                 extras?.getString("initialInvestment_2")!!.toDouble(),
                 extras.getString("cashFlow_2")!!.toDouble(),
                 extras.getString("year_2")!!.toDouble()
 
             )
-            val commpany_3: Double = viewModel.stableCount(
+            val commpany_3: Double = viewModel.PPstableCount(
                 extras?.getString("initialInvestment_3")!!.toDouble(),
                 extras.getString("cashFlow_3")!!.toDouble(),
                 extras.getString("year_3")!!.toDouble()
