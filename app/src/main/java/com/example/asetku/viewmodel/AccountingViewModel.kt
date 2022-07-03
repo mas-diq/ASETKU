@@ -66,4 +66,21 @@ class AccountingViewModel : ViewModel() {
         val npv2 = NPVstableCount(ii2, cf2, y2, dr2)
         return (dr1 + (npv1 / (npv1 - npv2)) * (dr1 - dr1))
     }
+
+    fun IRRdifferentCount(
+        ii1: Double,
+        dr1: Double,
+        cf11: Double,
+        cf12: Double,
+        cf13: Double,
+        ii2: Double,
+        dr2: Double,
+        cf21: Double,
+        cf22: Double,
+        cf23: Double,
+    ): Double {
+        val npv1 = NPVdifferentCount(ii1, dr1, cf11, cf12, cf13)
+        val npv2 = NPVdifferentCount(ii2, dr2, cf21, cf22, cf23)
+        return (dr1 + (npv1 / (npv1 - npv2)) * (dr1 - dr1))
+    }
 }

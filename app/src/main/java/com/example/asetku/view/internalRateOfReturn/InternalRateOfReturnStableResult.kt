@@ -73,28 +73,28 @@ class InternalRateOfReturnStableResult : AppCompatActivity() {
             if (result_1 <= 0) {
                 binding.result.tvPerusahaan1Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan1Value.text =
-                    "Internal Rate of Return = $result_1% (not feasible)"
+                    "Internal Rate of Return = $result_1 (not feasible)"
             } else {
                 binding.result.tvPerusahaan1Value.text =
-                    "Internal Rate of Return = $result_1% (feasible)"
+                    "Internal Rate of Return = $result_1 (feasible)"
             }
 
             if (result_2 <= 0) {
                 binding.result.tvPerusahaan2Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan2Value.text =
-                    "Internal Rate of Return = $result_2% (not feasible)"
+                    "Internal Rate of Return = $result_2 (not feasible)"
             } else {
                 binding.result.tvPerusahaan2Value.text =
-                    "Internal Rate of Return = $result_2% (feasible)"
+                    "Internal Rate of Return = $result_2 (feasible)"
             }
 
             if (result_3 <= 0) {
                 binding.result.tvPerusahaan3Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan3Value.text =
-                    "Internal Rate of Return = $result_3% (not feasible)"
+                    "Internal Rate of Return = $result_3 (not feasible)"
             } else {
                 binding.result.tvPerusahaan3Value.text =
-                    "Internal Rate of Return = $result_3% (feasible)"
+                    "Internal Rate of Return = $result_3 (feasible)"
             }
 
             if (commpany_1 >= commpany_2 && commpany_1 >= commpany_3) {
