@@ -34,10 +34,9 @@ class InternalRateOfReturnDifferent : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val move = Intent(this, LoadingScreen::class.java)
+                val move = Intent(this, InternalRateOfReturnDifferentResult::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
-                    putString("dir", "irrDifferent")
                     // Structures ..._company_npv
                     // Company 1 NPV 1
                     putString(
@@ -117,6 +116,7 @@ class InternalRateOfReturnDifferent : AppCompatActivity() {
                     putString("cashFlow_3_2_1", binding.input6.textField3.textEdit.text.toString())
                     putString("cashFlow_3_2_2", binding.input6.textField4.textEdit.text.toString())
                     putString("cashFlow_3_2_3", binding.input6.textField5.textEdit.text.toString())
+                    putString("dir", "irrDifferent")
                 }
                 move.putExtras(bundleData)
                 startActivity(move)

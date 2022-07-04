@@ -46,7 +46,7 @@ class NetPresentValueDifferent : AppCompatActivity() {
         binding.input2.textField5.textField.hint = getString(R.string.cash_flow_3)
 
         // Perusahaan 3
-        binding.input3.textViewTitle.text = getString(R.string.company_2)
+        binding.input3.textViewTitle.text = getString(R.string.company_3)
         binding.input3.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input3.textField2.textField.hint = getString(R.string.discount_rate)
         binding.input3.textField3.textField.hint = getString(R.string.cash_flow_1)
@@ -70,10 +70,9 @@ class NetPresentValueDifferent : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val move = Intent(this, LoadingScreen::class.java)
+                val move = Intent(this, NetPresentValueDifferentResult::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
-                    putString("dir", "npvDifferent")
                     putString(
                         "initialInvestment_1",
                         binding.input1.textField1.textEdit.text.toString()
@@ -100,6 +99,7 @@ class NetPresentValueDifferent : AppCompatActivity() {
                     putString("cash_flow_3_1", binding.input3.textField3.textEdit.text.toString())
                     putString("cash_flow_3_2", binding.input3.textField4.textEdit.text.toString())
                     putString("cash_flow_3_3", binding.input3.textField5.textEdit.text.toString())
+                    putString("dir", "npvDifferent")
                 }
                 move.putExtras(bundleData)
                 startActivity(move)

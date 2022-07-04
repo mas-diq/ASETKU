@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityInternalRateOfReturnStableBinding
-import com.example.asetku.view.LoadingScreen
 import com.example.asetku.view.MainActivity
 
 class InternalRateOfReturnStable : AppCompatActivity() {
@@ -33,10 +32,9 @@ class InternalRateOfReturnStable : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val move = Intent(this, LoadingScreen::class.java)
+                val move = Intent(this, InternalRateOfReturnStableResult::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
-                    putString("dir", "irrStable")
                     // Structures ..._company_npv
                     // Company 1 NPV 1
                     putString(
@@ -109,6 +107,7 @@ class InternalRateOfReturnStable : AppCompatActivity() {
                         "discountRate_3_2",
                         binding.input6.textField4.textEdit.text.toString()
                     )
+                    putString("dir", "irrStable")
                 }
                 move.putExtras(bundleData)
                 startActivity(move)

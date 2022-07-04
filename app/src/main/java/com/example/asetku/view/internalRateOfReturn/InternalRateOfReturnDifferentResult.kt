@@ -72,9 +72,9 @@ class InternalRateOfReturnDifferentResult : AppCompatActivity() {
                 extras.getString("cashFlow_3_2_2")!!.toDouble(),
                 extras.getString("cashFlow_3_2_3")!!.toDouble()
             )
-            val result_1 = String.format("%.3f", commpany_1).toDouble()
-            val result_2 = String.format("%.3f", commpany_2).toDouble()
-            val result_3 = String.format("%.3f", commpany_3).toDouble()
+            val result_1 = String.format("%.1f", commpany_1).toDouble()
+            val result_2 = String.format("%.1f", commpany_2).toDouble()
+            val result_3 = String.format("%.1f", commpany_3).toDouble()
 
             if (result_1 <= 0) {
                 binding.result.tvPerusahaan1Value.setTextColor(getColor(R.color.red))

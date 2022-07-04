@@ -21,7 +21,6 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_semi_bold"
         android:text="Title Header"
-        android:textColor="@color/dark_grey"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/icon_back"
         app:layout_constraintEnd_toEndOf="parent"

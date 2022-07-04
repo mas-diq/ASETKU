@@ -33,10 +33,9 @@ class NetPresentValueStable : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val move = Intent(this, LoadingScreen::class.java)
+                val move = Intent(this, NetPresentValueStableResult::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
-                    putString("dir", "npvStable")
                     putString(
                         "initialInvestment_1",
                         binding.input1.textField1.textEdit.text.toString()
@@ -60,6 +59,7 @@ class NetPresentValueStable : AppCompatActivity() {
                     putString("cashFlow_3", binding.input3.textField2.textEdit.text.toString())
                     putString("year_3", binding.input3.textField3.textEdit.text.toString())
                     putString("discountRate_3", binding.input3.textField4.textEdit.text.toString())
+                    putString("dir", "npvStable")
                 }
                 move.putExtras(bundleData)
                 startActivity(move)
@@ -93,7 +93,7 @@ class NetPresentValueStable : AppCompatActivity() {
         binding.input2.textField4.textField.hint = getString(R.string.discount_rate)
 
         // Perusahaan 3
-        binding.input3.textViewTitle.text = getString(R.string.company_2)
+        binding.input3.textViewTitle.text = getString(R.string.company_3)
         binding.input3.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input3.textField2.textField.hint = getString(R.string.cash_flow)
         binding.input3.textField3.textField.hint = getString(R.string.year)

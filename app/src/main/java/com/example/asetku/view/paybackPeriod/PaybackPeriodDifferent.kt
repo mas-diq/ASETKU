@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityPaybackPeriodDifferentBinding
-import com.example.asetku.view.LoadingScreen
 import com.example.asetku.view.MainActivity
 
 class PaybackPeriodDifferent : AppCompatActivity() {
@@ -45,7 +44,7 @@ class PaybackPeriodDifferent : AppCompatActivity() {
         binding.input2.textField5.textField.hint = getString(R.string.cash_flow_3)
 
         // Perusahaan 3
-        binding.input3.textViewTitle.text = getString(R.string.company_2)
+        binding.input3.textViewTitle.text = getString(R.string.company_3)
         binding.input3.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input3.textField2.textField.hint = getString(R.string.year)
         binding.input3.textField3.textField.hint = getString(R.string.cash_flow_1)
@@ -69,10 +68,9 @@ class PaybackPeriodDifferent : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val move = Intent(this, LoadingScreen::class.java)
+                val move = Intent(this, PaybackPeriodDifferentResult::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
-                    putString("dir", "ppDifferent")
                     putString(
                         "initialInvestment_1",
                         binding.input1.textField1.textEdit.text.toString()
@@ -99,6 +97,7 @@ class PaybackPeriodDifferent : AppCompatActivity() {
                     putString("cash_flow_3_1", binding.input3.textField3.textEdit.text.toString())
                     putString("cash_flow_3_2", binding.input3.textField4.textEdit.text.toString())
                     putString("cash_flow_3_3", binding.input3.textField5.textEdit.text.toString())
+                    putString("dir", "ppDifferent")
                 }
                 move.putExtras(bundleData)
                 startActivity(move)
