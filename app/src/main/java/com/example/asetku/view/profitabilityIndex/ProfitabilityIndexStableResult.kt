@@ -58,7 +58,7 @@ class ProfitabilityIndexStableResult : AppCompatActivity() {
             val result_2 = String.format("%.3f", commpany_2).toDouble()
             val result_3 = String.format("%.3f", commpany_3).toDouble()
 
-            if (result_1 <= 0) {
+            if (result_1 <= 1) {
                 binding.result.tvPerusahaan1Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan1Value.text =
                     "Profitability Index = $result_1 (not feasible)"
@@ -67,7 +67,7 @@ class ProfitabilityIndexStableResult : AppCompatActivity() {
                     "Profitability Index = $result_1 (feasible)"
             }
 
-            if (result_2 <= 0) {
+            if (result_2 <= 1) {
                 binding.result.tvPerusahaan2Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan2Value.text =
                     "Profitability Index = $result_2 (not feasible)"
@@ -76,7 +76,7 @@ class ProfitabilityIndexStableResult : AppCompatActivity() {
                     "Profitability Index = $result_2 (feasible)"
             }
 
-            if (result_3 <= 0) {
+            if (result_3 <= 1) {
                 binding.result.tvPerusahaan3Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan3Value.text =
                     "Profitability Index = $result_3 (not feasible)"

@@ -6,8 +6,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityInternalRateOfReturnDifferentBinding
-import com.example.asetku.view.LoadingScreen
 import com.example.asetku.view.MainActivity
+import com.example.asetku.view.UnderConstruction
 
 class InternalRateOfReturnDifferent : AppCompatActivity() {
 
@@ -28,7 +28,7 @@ class InternalRateOfReturnDifferent : AppCompatActivity() {
 
     private fun getInfo() {
         binding.info.setOnClickListener {
-            val move = Intent(this, InternalRateOfReturnArticle::class.java)
+            val move = Intent(this, UnderConstruction::class.java)
             startActivity(move)
         }
     }

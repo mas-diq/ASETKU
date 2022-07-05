@@ -35,4 +35,6 @@
     <string name="pi_article">The profitability index (PI), alternatively referred to as value investment ratio (VIR) or profit investment ratio (PIR), describes an index that represents the relationship between the costs and benefits of a proposed project. It is calculated as the ratio between the present value of future expected cash flows and the initial amount invested in the project. A higher PI means that a project will be considered more attractive.</string>
     <string name="irr_article">The internal rate of return (IRR) is a metric used in financial analysis to estimate the profitability of potential investments. IRR is a discount rate that makes the net present value (NPV) of all cash flows equal to zero in a discounted cash flow analysis.</string>
     <string name="back">Back</string>
+    <string name="methods">PP, NPV, PI and IRR</string>
+    <string name="back_to_method">Back to Method</string>
 </resources>

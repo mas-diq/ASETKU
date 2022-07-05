@@ -7,6 +7,11 @@
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/drawable/ic_check_circle.xml" value="0.3425" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/drawable/ic_round_arrow_back_24.xml" value="0.257" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout-v26/activity_internal_rate_of_return_article.xml" value="0.3625" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_four_method_article.xml" value="0.15185185185185185" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_four_method_different.xml" value="0.2865376698229724" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_four_method_different_result.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_four_method_stable.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_four_method_stable_result.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_internal_rate_of_return_article.xml" value="0.25" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_internal_rate_of_return_different.xml" value="0.2935185185185185" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_internal_rate_of_return_different_result.xml" value="0.2935185185185185" />
@@ -31,9 +36,13 @@
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_profitability_index_main_stable.xml" value="0.2935185185185185" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_profitability_index_stable_result.xml" value="0.2810185185185185" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_splash_screen.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_under_construction.xml" value="0.29583333333333334" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/btn_back_method.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/btn_back_once.xml" value="0.21739130434782608" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/btn_hitung.xml" value="0.14907407407407408" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/btn_kembali.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/btn_main.xml" value="0.3212962962962963" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/header_four_layout.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/header_irr_layout.xml" value="0.15718157181571815" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/header_layout.xml" value="0.3212962962962963" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/header_npv_layout.xml" value="0.15718157181571815" />
@@ -50,6 +59,7 @@
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/input_two_variable_different.xml" value="0.2740740740740741" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/recommendation_layout.xml" value="0.3212962962962963" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/result_three_variable.xml" value="0.3212962962962963" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/result_three_variable_special.xml" value="0.24139492753623187" />
       </map>
     </option>
   </component>

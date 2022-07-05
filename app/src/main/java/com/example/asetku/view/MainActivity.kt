@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.databinding.ActivityMainBinding
+import com.example.asetku.view.fourMethod.FourMethodStable
 import com.example.asetku.view.internalRateOfReturn.InternalRateOfReturnDifferent
 import com.example.asetku.view.internalRateOfReturn.InternalRateOfReturnStable
 import com.example.asetku.view.netPresentValue.NetPresentValueDifferent
@@ -28,7 +29,19 @@ class MainActivity : AppCompatActivity() {
         moveToNPV()
         moveToPI()
         moveToIRR()
-        // 4 Method
+        moveToFour()
+    }
+
+    private fun moveToFour() {
+        binding.cardViewFourMethod.setOnClickListener {
+            if (binding.switch1.isChecked) {
+                val move = Intent(this, UnderConstruction::class.java)
+                startActivity(move)
+            } else {
+                val move = Intent(this, FourMethodStable::class.java)
+                startActivity(move)
+            }
+        }
     }
 
     private fun moveToIRR() {

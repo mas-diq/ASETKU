@@ -374,7 +374,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat_bold"
-                    android:text="4 Method"
+                    android:text="4 Methods"
                     android:textColor="@color/white"
                     android:textSize="52sp"
 
@@ -388,7 +388,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Using 4 Method PP, NPV, PI and IRR"
+                    android:text="Using 4 different methods"
                     android:textColor="@color/white"
                     android:textSize="14sp"
 
@@ -401,7 +401,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="to find the best investment"
+                    android:text="PP, NPV, PI and IRR"
                     android:textColor="@color/white"
                     android:textSize="14sp"
 
