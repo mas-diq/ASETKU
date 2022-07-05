@@ -77,7 +77,6 @@ class FourMethodStableResult : AppCompatActivity() {
                     viewModel.PPstableCount(
                         company[i][0],
                         company[i][1],
-                        company[i][2]
                     )
                 result_npv[i] =
                     viewModel.NPVstableCount(

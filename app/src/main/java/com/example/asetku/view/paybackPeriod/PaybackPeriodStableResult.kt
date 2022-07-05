@@ -33,19 +33,16 @@ class PaybackPeriodStableResult : AppCompatActivity() {
             val commpany_1: Double = viewModel.PPstableCount(
                 extras.getString("initialInvestment_1")!!.toDouble(),
                 extras.getString("cashFlow_1")!!.toDouble(),
-                extras.getString("year_1")!!.toDouble()
 
             )
             val commpany_2: Double = viewModel.PPstableCount(
                 extras.getString("initialInvestment_2")!!.toDouble(),
                 extras.getString("cashFlow_2")!!.toDouble(),
-                extras.getString("year_2")!!.toDouble()
 
             )
             val commpany_3: Double = viewModel.PPstableCount(
                 extras.getString("initialInvestment_3")!!.toDouble(),
                 extras.getString("cashFlow_3")!!.toDouble(),
-                extras.getString("year_3")!!.toDouble()
             )
             val result_1 = String.format("%.3f", commpany_1).toDouble()
             val result_2 = String.format("%.3f", commpany_2).toDouble()

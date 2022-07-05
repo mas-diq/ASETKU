@@ -5,25 +5,25 @@ import kotlin.math.pow
 
 class AccountingViewModel : ViewModel() {
 
-    fun PPstableCount(ii: Double, cf: Double, y: Double): Double {
-        return (ii / cf * y)
+    fun PPstableCount(ii: Double, cf: Double): Double {
+        return (ii / cf)
     }
 
-    fun PPdifferentCount(ii: Double, y: Double, cf1: Double, cf2: Double, cf3: Double): Double {
+    fun PPdifferentCount(ii: Double, cf1: Double, cf2: Double, cf3: Double): Double {
         val cfNew = DoubleArray(3)
-        cfNew[0] = cf1
-        cfNew[1] = cfNew[0] + cf2
-        cfNew[2] = cfNew[1] + cf3
+        cfNew[0] = cf1 // 50
+        cfNew[1] = cfNew[0] + cf2 // 90
+        cfNew[2] = cfNew[1] + cf3 // 120
 
-        return if (ii <= cfNew[1]) {
-            (2 + ((ii - cfNew[0]) / (cfNew[1])) * y)
+        return if (ii >= cfNew[1] && ii <= cfNew[2]) {
+            (2.0 + ((ii - cfNew[1]) / ((cfNew[2]) - (cfNew[1])) * 1))
         } else {
-            (3 + ((ii - cfNew[1]) / (cfNew[2])) * y)
+            0.0
         }
     }
 
     fun NPVstableCount(ii: Double, cf: Double, y: Double, dr: Double): Double {
-        return ((cf / (1 + dr / 100).pow(y)) - ii)
+        return ((ii / (1 + dr / 100).pow(y)) - cf)
     }
 
     fun NPVdifferentCount(

@@ -55,21 +55,18 @@ class PaybackPeriodStable : AppCompatActivity() {
                         binding.input1.textField1.textEdit.text.toString()
                     )
                     putString("cashFlow_1", binding.input1.textField2.textEdit.text.toString())
-                    putString("year_1", binding.input1.textField3.textEdit.text.toString())
 
                     putString(
                         "initialInvestment_2",
                         binding.input2.textField1.textEdit.text.toString()
                     )
                     putString("cashFlow_2", binding.input2.textField2.textEdit.text.toString())
-                    putString("year_2", binding.input2.textField3.textEdit.text.toString())
 
                     putString(
                         "initialInvestment_3",
                         binding.input3.textField1.textEdit.text.toString()
                     )
                     putString("cashFlow_3", binding.input3.textField2.textEdit.text.toString())
-                    putString("year_3", binding.input3.textField3.textEdit.text.toString())
                     putString("dir", "ppStable")
                 }
                 move.putExtras(bundleData)
@@ -86,30 +83,24 @@ class PaybackPeriodStable : AppCompatActivity() {
         binding.input2.textViewTitle.text = getString(R.string.company_1)
         binding.input1.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input1.textField2.textField.hint = getString(R.string.cash_flow)
-        binding.input1.textField3.textField.hint = getString(R.string.year)
 
         // Perusahaan 2
         binding.input2.textViewTitle.text = getString(R.string.company_2)
         binding.input2.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input2.textField2.textField.hint = getString(R.string.cash_flow)
-        binding.input2.textField3.textField.hint = getString(R.string.year)
 
         // Perusahaan 3
         binding.input3.textViewTitle.text = getString(R.string.company_3)
         binding.input3.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input3.textField2.textField.hint = getString(R.string.cash_flow)
-        binding.input3.textField3.textField.hint = getString(R.string.year)
     }
 
     private fun checkNull(): Boolean {
         return binding.input1.textField1.textEdit.text.isNullOrBlank() ||
                 binding.input1.textField2.textEdit.text.isNullOrBlank() ||
-                binding.input1.textField3.textEdit.text.isNullOrBlank() ||
                 binding.input2.textField1.textEdit.text.isNullOrBlank() ||
                 binding.input2.textField2.textEdit.text.isNullOrBlank() ||
-                binding.input2.textField3.textEdit.text.isNullOrBlank() ||
                 binding.input3.textField1.textEdit.text.isNullOrBlank() ||
-                binding.input3.textField2.textEdit.text.isNullOrBlank() ||
-                binding.input3.textField3.textEdit.text.isNullOrBlank()
+                binding.input3.textField2.textEdit.text.isNullOrBlank()
     }
 }

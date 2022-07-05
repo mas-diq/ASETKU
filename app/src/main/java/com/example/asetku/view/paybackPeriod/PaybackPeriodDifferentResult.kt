@@ -36,7 +36,6 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
         if (extras != null) {
             val commpany_1: Double = viewModel.PPdifferentCount(
                 extras.getString("initialInvestment_1")!!.toDouble(),
-                extras.getString("discountRate_1")!!.toDouble(),
                 extras.getString("cash_flow_1_1")!!.toDouble(),
                 extras.getString("cash_flow_1_2")!!.toDouble(),
                 extras.getString("cash_flow_1_3")!!.toDouble()
@@ -44,7 +43,6 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
             )
             val commpany_2: Double = viewModel.PPdifferentCount(
                 extras.getString("initialInvestment_2")!!.toDouble(),
-                extras.getString("discountRate_2")!!.toDouble(),
                 extras.getString("cash_flow_2_1")!!.toDouble(),
                 extras.getString("cash_flow_2_2")!!.toDouble(),
                 extras.getString("cash_flow_2_3")!!.toDouble()
@@ -52,7 +50,6 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
             )
             val commpany_3: Double = viewModel.PPdifferentCount(
                 extras.getString("initialInvestment_3")!!.toDouble(),
-                extras.getString("discountRate_3")!!.toDouble(),
                 extras.getString("cash_flow_3_1")!!.toDouble(),
                 extras.getString("cash_flow_3_2")!!.toDouble(),
                 extras.getString("cash_flow_3_3")!!.toDouble()
@@ -64,25 +61,25 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
             if (result_1 <= 0) {
                 binding.result.tvPerusahaan1Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan1Value.text =
-                    "Net Present Value = $$result_1 (not feasible)"
+                    "Investment has not returned"
             } else {
-                binding.result.tvPerusahaan1Value.text = "Net Present Value = $$result_1 (feasible)"
+                binding.result.tvPerusahaan1Value.text = "Payback Period = $result_1 Years"
             }
 
             if (result_2 <= 0) {
                 binding.result.tvPerusahaan2Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan2Value.text =
-                    "Net Present Value = $$result_2 (not feasible)"
+                    "Investment has not returned"
             } else {
-                binding.result.tvPerusahaan2Value.text = "Net Present Value = $$result_2 (feasible)"
+                binding.result.tvPerusahaan2Value.text = "Payback Period = $result_2 Years"
             }
 
             if (result_3 <= 0) {
                 binding.result.tvPerusahaan3Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan3Value.text =
-                    "Net Present Value = $$result_3 (not feasible)"
+                    "Investment has not returned"
             } else {
-                binding.result.tvPerusahaan3Value.text = "Net Present Value = $$result_3 (feasible)"
+                binding.result.tvPerusahaan3Value.text = "Payback Period = $result_3 Years"
             }
 
             if (commpany_1 >= commpany_2 && commpany_1 >= commpany_3) {
