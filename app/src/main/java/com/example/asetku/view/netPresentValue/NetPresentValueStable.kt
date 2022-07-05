@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityNetPresentValueStableBinding
-import com.example.asetku.view.LoadingScreen
 import com.example.asetku.view.MainActivity
 
 class NetPresentValueStable : AppCompatActivity() {
@@ -19,9 +18,17 @@ class NetPresentValueStable : AppCompatActivity() {
         setContentView(binding.root)
         actionBar?.hide()
 
+        getInfo()
         changeData()
         count()
         back()
+    }
+
+    private fun getInfo() {
+        binding.info.setOnClickListener {
+            val move = Intent(this, NetPresentValueArticle::class.java)
+            startActivity(move)
+        }
     }
 
     private fun count() {

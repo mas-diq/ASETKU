@@ -57,9 +57,9 @@ class NetPresentValueDifferentResult : AppCompatActivity() {
                 extras.getString("cash_flow_3_2")!!.toDouble(),
                 extras.getString("cash_flow_3_3")!!.toDouble()
             )
-            val result_1 = String.format("%.1f", commpany_1).toDouble()
-            val result_2 = String.format("%.1f", commpany_2).toDouble()
-            val result_3 = String.format("%.1f", commpany_3).toDouble()
+            val result_1 = String.format("%.3f", commpany_1).toDouble()
+            val result_2 = String.format("%.3f", commpany_2).toDouble()
+            val result_3 = String.format("%.3f", commpany_3).toDouble()
 
             if (result_1 <= 0) {
                 binding.result.tvPerusahaan1Value.setTextColor(getColor(R.color.red))
@@ -98,7 +98,7 @@ class NetPresentValueDifferentResult : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.M)
     private fun changeData() {
         binding.header.textView.text = getString(R.string.stable_title)
-        binding.recommendation.card.setBackgroundColor(getColor(R.color.yellow))
+        binding.recommendation.card.setBackgroundColor(getColor(R.color.pink))
     }
 
     private fun back() {

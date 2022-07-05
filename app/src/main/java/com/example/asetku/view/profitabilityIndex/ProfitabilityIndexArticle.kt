@@ -1,5 +1,6 @@
 package com.example.asetku.view.profitabilityIndex
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.databinding.ActivityProfitabilityIndexArticleBinding
@@ -14,5 +15,8 @@ class ProfitabilityIndexArticle : AppCompatActivity() {
         setContentView(binding.root)
         actionBar?.hide()
 
+        binding.imageView4.setOnClickListener {
+            onBackPressed()
+        }
     }
 }

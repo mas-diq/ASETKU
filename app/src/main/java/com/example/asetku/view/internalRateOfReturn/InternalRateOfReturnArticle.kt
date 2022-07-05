@@ -1,5 +1,6 @@
 package com.example.asetku.view.internalRateOfReturn
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.databinding.ActivityInternalRateOfReturnArticleBinding
@@ -13,5 +14,10 @@ class InternalRateOfReturnArticle : AppCompatActivity() {
         binding = ActivityInternalRateOfReturnArticleBinding.inflate(layoutInflater)
         setContentView(binding.root)
         actionBar?.hide()
+
+        binding.imageView4.setOnClickListener {
+            onBackPressed()
+        }
     }
+
 }

@@ -29,4 +29,10 @@
     <string name="template_value">Insert Value</string>
     <string name="the_best_investment">The best investment, goes to</string>
     <string name="calculating">Calculating...</string>
+    <string name="source">Source : www.investopedia.com</string>
+    <string name="pp_article">The term payback period (PP) refers to the amount of time it takes to recover the cost of an investment. Simply put, it is the length of time an investment reaches a breakeven point. People and corporations mainly invest their money to get paid back, which is why the payback period is so important. In essence, the shorter payback an investment has, the more attractive it becomes. Determining the payback period is useful for anyone and can be done by dividing the initial investment by the average cash flows.</string>
+    <string name="npv_article">Net present value (NPV) is the difference between the present value of cash inflows and the present value of cash outflows over a period of time. NPV is used in capital budgeting and investment planning to analyze the profitability of a projected investment or project. NPV is the result of calculations used to find today’s value of a future stream of payments.</string>
+    <string name="pi_article">The profitability index (PI), alternatively referred to as value investment ratio (VIR) or profit investment ratio (PIR), describes an index that represents the relationship between the costs and benefits of a proposed project. It is calculated as the ratio between the present value of future expected cash flows and the initial amount invested in the project. A higher PI means that a project will be considered more attractive.</string>
+    <string name="irr_article">The internal rate of return (IRR) is a metric used in financial analysis to estimate the profitability of potential investments. IRR is a discount rate that makes the net present value (NPV) of all cash flows equal to zero in a discounted cash flow analysis.</string>
+    <string name="back">Back</string>
 </resources>

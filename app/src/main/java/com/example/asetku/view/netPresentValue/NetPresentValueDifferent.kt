@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityNetPresentValueDifferentBinding
-import com.example.asetku.view.LoadingScreen
 import com.example.asetku.view.MainActivity
 
 class NetPresentValueDifferent : AppCompatActivity() {
@@ -20,9 +19,17 @@ class NetPresentValueDifferent : AppCompatActivity() {
         setContentView(binding.root)
         actionBar?.hide()
 
+        getInfo()
         back()
         count()
         changeData()
+    }
+
+    private fun getInfo() {
+        binding.info.setOnClickListener {
+            val move = Intent(this, NetPresentValueArticle::class.java)
+            startActivity(move)
+        }
     }
 
     private fun changeData() {

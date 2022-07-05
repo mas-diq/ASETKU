@@ -20,9 +20,17 @@ class InternalRateOfReturnDifferent : AppCompatActivity() {
         setContentView(binding.root)
         actionBar?.hide()
 
+        getInfo()
         changeData()
         count()
         back()
+    }
+
+    private fun getInfo() {
+        binding.info.setOnClickListener {
+            val move = Intent(this, InternalRateOfReturnArticle::class.java)
+            startActivity(move)
+        }
     }
 
     private fun count() {

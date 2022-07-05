@@ -18,9 +18,17 @@ class PaybackPeriodDifferent : AppCompatActivity() {
         setContentView(binding.root)
         actionBar?.hide()
 
+        getInfo()
         back()
         count()
         changeData()
+    }
+
+    private fun getInfo() {
+        binding.info.setOnClickListener {
+            val move = Intent(this, PaybackPeriodArticle::class.java)
+            startActivity(move)
+        }
     }
 
     private fun changeData() {

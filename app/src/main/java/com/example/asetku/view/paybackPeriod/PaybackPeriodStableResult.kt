@@ -47,9 +47,9 @@ class PaybackPeriodStableResult : AppCompatActivity() {
                 extras.getString("cashFlow_3")!!.toDouble(),
                 extras.getString("year_3")!!.toDouble()
             )
-            val result_1 = String.format("%.1f", commpany_1).toDouble()
-            val result_2 = String.format("%.1f", commpany_2).toDouble()
-            val result_3 = String.format("%.1f", commpany_3).toDouble()
+            val result_1 = String.format("%.3f", commpany_1).toDouble()
+            val result_2 = String.format("%.3f", commpany_2).toDouble()
+            val result_3 = String.format("%.3f", commpany_3).toDouble()
 
             binding.result.tvPerusahaan1Value.text = "Payback Period = $result_1 Year"
             binding.result.tvPerusahaan2Value.text = "Payback Period = $result_2 Year"

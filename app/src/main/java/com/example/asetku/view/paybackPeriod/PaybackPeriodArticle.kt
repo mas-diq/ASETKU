@@ -1,5 +1,6 @@
 package com.example.asetku.view.paybackPeriod
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.databinding.ActivityPaybackPeriodArticleBinding
@@ -14,5 +15,8 @@ class PaybackPeriodArticle : AppCompatActivity() {
         setContentView(binding.root)
         actionBar?.hide()
 
+        binding.imageView4.setOnClickListener {
+            onBackPressed()
+        }
     }
 }
