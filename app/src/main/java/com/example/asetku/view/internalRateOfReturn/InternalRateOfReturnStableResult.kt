@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -43,7 +44,6 @@ class InternalRateOfReturnStableResult : AppCompatActivity() {
                 extras.getString("cashFlow_1_2")!!.toDouble(),
                 extras.getString("year_1_2")!!.toDouble(),
                 extras.getString("discountRate_1_2")!!.toDouble()
-
             )
             val commpany_2: Double = viewModel.IRRstableCount(
                 extras.getString("initialInvestment_2_1")!!.toDouble(),
@@ -69,32 +69,38 @@ class InternalRateOfReturnStableResult : AppCompatActivity() {
             val result_1 = String.format("%.3f", commpany_1).toDouble()
             val result_2 = String.format("%.3f", commpany_2).toDouble()
             val result_3 = String.format("%.3f", commpany_3).toDouble()
+            Log.i("company 1", commpany_1.toString())
+            Log.i("company 2", commpany_2.toString())
+            Log.i("company 3", commpany_3.toString())
+            Log.i("result 1", result_1.toString())
+            Log.i("result 2", result_2.toString())
+            Log.i("result 3", result_3.toString())
 
-            if (result_1 <= 0) {
+            if (result_1 <= extras.getString("discountRate_1_1")!!.toDouble()) {
                 binding.result.tvPerusahaan1Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan1Value.text =
-                    "Internal Rate of Return = $result_1 (not feasible)"
+                    "Internal Rate of Return = $result_1% (not feasible)"
             } else {
                 binding.result.tvPerusahaan1Value.text =
-                    "Internal Rate of Return = $result_1 (feasible)"
+                    "Internal Rate of Return = $result_1% (feasible)"
             }
 
-            if (result_2 <= 0) {
+            if (result_2 <= extras.getString("discountRate_2_1")!!.toDouble()) {
                 binding.result.tvPerusahaan2Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan2Value.text =
-                    "Internal Rate of Return = $result_2 (not feasible)"
+                    "Internal Rate of Return = $result_2% (not feasible)"
             } else {
                 binding.result.tvPerusahaan2Value.text =
-                    "Internal Rate of Return = $result_2 (feasible)"
+                    "Internal Rate of Return = $result_2% (feasible)"
             }
 
-            if (result_3 <= 0) {
+            if (result_3 <= extras.getString("discountRate_3_1")!!.toDouble()) {
                 binding.result.tvPerusahaan3Value.setTextColor(getColor(R.color.red))
                 binding.result.tvPerusahaan3Value.text =
-                    "Internal Rate of Return = $result_3 (not feasible)"
+                    "Internal Rate of Return = $result_3% (not feasible)"
             } else {
                 binding.result.tvPerusahaan3Value.text =
-                    "Internal Rate of Return = $result_3 (feasible)"
+                    "Internal Rate of Return = $result_3% (feasible)"
             }
 
             if (commpany_1 >= commpany_2 && commpany_1 >= commpany_3) {

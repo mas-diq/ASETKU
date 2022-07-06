@@ -11,9 +11,9 @@ class AccountingViewModel : ViewModel() {
 
     fun PPdifferentCount(ii: Double, cf1: Double, cf2: Double, cf3: Double): Double {
         val cfNew = DoubleArray(3)
-        cfNew[0] = cf1 // 50
-        cfNew[1] = cfNew[0] + cf2 // 90
-        cfNew[2] = cfNew[1] + cf3 // 120
+        cfNew[0] = cf1
+        cfNew[1] = cfNew[0] + cf2
+        cfNew[2] = cfNew[1] + cf3
 
         return if (ii >= cfNew[1] && ii <= cfNew[2]) {
             (2.0 + ((ii - cfNew[1]) / ((cfNew[2]) - (cfNew[1])) * 1))
@@ -23,7 +23,11 @@ class AccountingViewModel : ViewModel() {
     }
 
     fun NPVstableCount(ii: Double, cf: Double, y: Double, dr: Double): Double {
-        return ((ii / (1 + dr / 100).pow(y)) - cf)
+        var result = 0.0
+        for (i in 1..y.toInt()) {
+            result += (cf / (1 + dr / 100).pow(i))
+        }
+        return (result - ii.toInt())
     }
 
     fun NPVdifferentCount(
@@ -38,7 +42,7 @@ class AccountingViewModel : ViewModel() {
 
     fun PIstableCount(ii: Double, cf: Double, y: Double, dr: Double): Double {
         val npv = NPVstableCount(ii, cf, y, dr)
-        return (1 + (npv / ii))
+        return ((npv + ii) / ii)
     }
 
     fun PIdifferentCount(
@@ -52,6 +56,7 @@ class AccountingViewModel : ViewModel() {
         return (1 + (npv / ii))
     }
 
+    // only 1 decimal after value
     fun IRRstableCount(
         ii1: Double,
         cf1: Double,
@@ -64,7 +69,7 @@ class AccountingViewModel : ViewModel() {
     ): Double {
         val npv1 = NPVstableCount(ii1, cf1, y1, dr1)
         val npv2 = NPVstableCount(ii2, cf2, y2, dr2)
-        return (dr1 + (npv1 / (npv1 - npv2)) * (dr1 - dr1))
+        return (dr1 + ((npv1 / (npv1 - npv2)) * (dr2 - dr1)))
     }
 
     fun IRRdifferentCount(
@@ -81,6 +86,6 @@ class AccountingViewModel : ViewModel() {
     ): Double {
         val npv1 = NPVdifferentCount(ii1, dr1, cf11, cf12, cf13)
         val npv2 = NPVdifferentCount(ii2, dr2, cf21, cf22, cf23)
-        return (dr1 + (npv1 / (npv1 - npv2)) * (dr1 - dr1))
+        return (dr1 + ((npv1 / (npv1 - npv2)) * (dr2 - dr1)))
     }
 }

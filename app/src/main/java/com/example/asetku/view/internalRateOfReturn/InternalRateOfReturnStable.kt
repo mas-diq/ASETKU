@@ -2,6 +2,7 @@ package com.example.asetku.view.internalRateOfReturn
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
@@ -118,6 +119,7 @@ class InternalRateOfReturnStable : AppCompatActivity() {
                     )
                     putString("dir", "irrStable")
                 }
+                Log.i("Data awal", bundleData.toString())
                 move.putExtras(bundleData)
                 startActivity(move)
             }
