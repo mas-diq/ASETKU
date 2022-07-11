@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -69,12 +68,6 @@ class InternalRateOfReturnStableResult : AppCompatActivity() {
             val result_1 = String.format("%.3f", commpany_1).toDouble()
             val result_2 = String.format("%.3f", commpany_2).toDouble()
             val result_3 = String.format("%.3f", commpany_3).toDouble()
-            Log.i("company 1", commpany_1.toString())
-            Log.i("company 2", commpany_2.toString())
-            Log.i("company 3", commpany_3.toString())
-            Log.i("result 1", result_1.toString())
-            Log.i("result 2", result_2.toString())
-            Log.i("result 3", result_3.toString())
 
             if (result_1 <= extras.getString("discountRate_1_1")!!.toDouble()) {
                 binding.result.tvPerusahaan1Value.setTextColor(getColor(R.color.red))

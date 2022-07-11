@@ -82,9 +82,9 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
                 binding.result.tvPerusahaan3Value.text = "Payback Period = $result_3 Years"
             }
 
-            if (commpany_1 >= commpany_2 && commpany_1 >= commpany_3) {
+            if (commpany_1 <= commpany_2 && commpany_1 <= commpany_3) {
                 binding.recommendation.textValue.text = getString(R.string.company_1)
-            } else if (commpany_2 >= commpany_3) {
+            } else if (commpany_2 <= commpany_3) {
                 binding.recommendation.textValue.text = getString(R.string.company_2)
             } else {
                 binding.recommendation.textValue.text = getString(R.string.company_3)
