@@ -3,7 +3,7 @@
 <p align="center">
   <br>
   <img  width="280px" src="https://raw.githubusercontent.com/mas-diq/ASETKU/master/Asetku.png" />
-  <h3 align="center">The Smart Security System</h3>
+  <h3 align="center">Your accurate personal investment calculator</h3>
   <p align="center">
     Assetku is an application developed by group 2 to fulfill the final project of the Computerized Financial Accounting Course. The methods that can be used in this application are Payback Period (PP), Net Present Value (NPV), Profitability Index (PI) and Internal Rate of Return (IRR).
     <br />
