@@ -4,15 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.databinding.ActivityMainBinding
-import com.example.asetku.view.fourMethod.FourMethodStable
-import com.example.asetku.view.internalRateOfReturn.InternalRateOfReturnDifferent
-import com.example.asetku.view.internalRateOfReturn.InternalRateOfReturnStable
-import com.example.asetku.view.netPresentValue.NetPresentValueDifferent
-import com.example.asetku.view.netPresentValue.NetPresentValueStable
-import com.example.asetku.view.paybackPeriod.PaybackPeriodDifferent
-import com.example.asetku.view.paybackPeriod.PaybackPeriodStable
-import com.example.asetku.view.profitabilityIndex.ProfitabilityIndexDifferent
-import com.example.asetku.view.profitabilityIndex.ProfitabilityIndexStable
+import com.example.asetku.view.fourMethodMultipleCompany.FourMethodStable
+import com.example.asetku.view.internalRateOfReturnMultipleCompany.InternalRateOfReturnDifferent
+import com.example.asetku.view.internalRateOfReturnMultipleCompany.InternalRateOfReturnStable
+import com.example.asetku.view.netPresentValueMultipleCompany.NetPresentValueDifferent
+import com.example.asetku.view.netPresentValueMultipleCompany.NetPresentValueStable
+import com.example.asetku.view.paybackPeriodMultipleCompany.PaybackPeriodDifferent
+import com.example.asetku.view.paybackPeriodMultipleCompany.PaybackPeriodStable
+import com.example.asetku.view.profitabilityIndexMultipleCompany.ProfitabilityIndexDifferent
+import com.example.asetku.view.profitabilityIndexMultipleCompany.ProfitabilityIndexStable
 
 class MainActivity : AppCompatActivity() {
 

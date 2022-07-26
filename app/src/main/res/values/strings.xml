@@ -37,4 +37,5 @@
     <string name="back">Back</string>
     <string name="methods">PP, NPV, PI and IRR</string>
     <string name="back_to_method">Back to Method</string>
+    <string name="description">Description</string>
 </resources>
