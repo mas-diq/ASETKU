@@ -5,14 +5,14 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.databinding.ActivityLoadingScreenBinding
-import com.example.asetku.view.internalRateOfReturn.InternalRateOfReturnDifferentResult
-import com.example.asetku.view.internalRateOfReturn.InternalRateOfReturnStableResult
-import com.example.asetku.view.netPresentValue.NetPresentValueDifferentResult
-import com.example.asetku.view.netPresentValue.NetPresentValueStableResult
-import com.example.asetku.view.paybackPeriod.PaybackPeriodDifferentResult
-import com.example.asetku.view.paybackPeriod.PaybackPeriodStableResult
-import com.example.asetku.view.profitabilityIndex.ProfitabilityIndexDifferentResult
-import com.example.asetku.view.profitabilityIndex.ProfitabilityIndexStableResult
+import com.example.asetku.view.internalRateOfReturnMultipleCompany.InternalRateOfReturnDifferentResult
+import com.example.asetku.view.internalRateOfReturnMultipleCompany.InternalRateOfReturnStableResult
+import com.example.asetku.view.netPresentValueMultipleCompany.NetPresentValueDifferentResult
+import com.example.asetku.view.netPresentValueMultipleCompany.NetPresentValueStableResult
+import com.example.asetku.view.paybackPeriodMultipleCompany.PaybackPeriodDifferentResult
+import com.example.asetku.view.paybackPeriodMultipleCompany.PaybackPeriodStableResult
+import com.example.asetku.view.profitabilityIndexMultipleCompany.ProfitabilityIndexDifferentResult
+import com.example.asetku.view.profitabilityIndexMultipleCompany.ProfitabilityIndexStableResult
 
 class LoadingScreen : AppCompatActivity() {
 
