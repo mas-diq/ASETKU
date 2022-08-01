@@ -43,7 +43,6 @@ class ProfitabilityIndexStable : AppCompatActivity() {
                 val move = Intent(this, ProfitabilityIndexStableResult::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
-                    // Directory
                     putString(
                         "initialInvestment_1",
                         binding.input1.textField1.textEdit.text.toString()

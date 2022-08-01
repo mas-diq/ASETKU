@@ -30,6 +30,8 @@
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_payback_period_article.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_payback_period_different.xml" value="0.25" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_payback_period_different_result.xml" value="0.2740740740740741" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_payback_period_one_stable.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_payback_period_one_stable_result.xml" value="0.33" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_payback_period_stable.xml" value="0.25" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_payback_period_stable_result.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_pploading_screen.xml" value="0.2554347826086957" />
@@ -38,7 +40,10 @@
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_profitability_index_main_different.xml" value="0.2740740740740741" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_profitability_index_main_stable.xml" value="0.2935185185185185" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_profitability_index_one.xml" value="0.33" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_profitability_index_one_different.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_profitability_index_one_result.xml" value="0.33" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_profitability_index_one_stable.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_profitability_index_one_stable_result.xml" value="0.33" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_profitability_index_stable_result.xml" value="0.2810185185185185" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_splash_screen.xml" value="0.358695652173913" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_transit.xml" value="0.32222222222222224" />

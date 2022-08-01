@@ -33,7 +33,6 @@ class PaybackPeriodStableResult : AppCompatActivity() {
             val commpany_1: Double = viewModel.PPstableCount(
                 extras.getString("initialInvestment_1")!!.toDouble(),
                 extras.getString("cashFlow_1")!!.toDouble(),
-
             )
             val commpany_2: Double = viewModel.PPstableCount(
                 extras.getString("initialInvestment_2")!!.toDouble(),
@@ -76,5 +75,4 @@ class PaybackPeriodStableResult : AppCompatActivity() {
     private fun changeData() {
         binding.header.textView.text = getString(R.string.stable_title)
     }
-
 }

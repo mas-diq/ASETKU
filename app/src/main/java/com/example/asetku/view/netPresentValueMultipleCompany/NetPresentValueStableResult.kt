@@ -39,7 +39,6 @@ class NetPresentValueStableResult : AppCompatActivity() {
                 extras.getString("cashFlow_1")!!.toDouble(),
                 extras.getString("year_1")!!.toDouble(),
                 extras.getString("discountRate_1")!!.toDouble()
-
             )
             val commpany_2: Double = viewModel.NPVstableCount(
                 extras.getString("initialInvestment_2")!!.toDouble(),

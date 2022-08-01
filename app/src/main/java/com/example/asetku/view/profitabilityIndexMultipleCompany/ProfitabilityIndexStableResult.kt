@@ -39,14 +39,12 @@ class ProfitabilityIndexStableResult : AppCompatActivity() {
                 extras.getString("cashFlow_1")!!.toDouble(),
                 extras.getString("year_1")!!.toDouble(),
                 extras.getString("discountRate_1")!!.toDouble()
-
             )
             val commpany_2: Double = viewModel.PIstableCount(
                 extras.getString("initialInvestment_2")!!.toDouble(),
                 extras.getString("cashFlow_2")!!.toDouble(),
                 extras.getString("year_2")!!.toDouble(),
                 extras.getString("discountRate_2")!!.toDouble()
-
             )
             val commpany_3: Double = viewModel.PIstableCount(
                 extras.getString("initialInvestment_3")!!.toDouble(),

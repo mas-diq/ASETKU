@@ -15,6 +15,7 @@
     <string name="npv">Net Present Value</string>
     <string name="pi">Profitability Index</string>
     <string name="irr">Internal Rate of Return</string>
+    <string name="company">Company</string>
     <string name="company_1">Company 1</string>
     <string name="company_2">Company 2</string>
     <string name="company_3">Company 3</string>

@@ -86,7 +86,7 @@ class NetPresentValueStable : AppCompatActivity() {
         binding.header.textView.text = getString(R.string.stable_title)
 
         // Perusahaan 1
-        binding.input2.textViewTitle.text = getString(R.string.company_1)
+        binding.input1.textViewTitle.text = getString(R.string.company_1)
         binding.input1.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input1.textField2.textField.hint = getString(R.string.cash_flow)
         binding.input1.textField3.textField.hint = getString(R.string.year)
