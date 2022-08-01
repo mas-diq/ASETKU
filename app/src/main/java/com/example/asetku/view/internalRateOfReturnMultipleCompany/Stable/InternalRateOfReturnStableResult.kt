@@ -1,4 +1,4 @@
-package com.example.asetku.view.internalRateOfReturnMultipleCompany
+package com.example.asetku.view.internalRateOfReturnMultipleCompany.Stable
 
 import android.annotation.SuppressLint
 import android.content.Intent

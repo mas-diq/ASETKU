@@ -10,7 +10,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityNetPresentValueOneStableResultBinding
 import com.example.asetku.view.MainActivity
-import com.example.asetku.view.netPresentValueMultipleCompany.NetPresentValueStable
 import com.example.asetku.viewmodel.AccountingViewModel
 
 class NetPresentValueOneStableResult : AppCompatActivity() {

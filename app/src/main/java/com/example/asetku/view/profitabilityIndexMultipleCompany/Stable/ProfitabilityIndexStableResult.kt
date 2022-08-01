@@ -1,4 +1,4 @@
-package com.example.asetku.view.profitabilityIndexMultipleCompany
+package com.example.asetku.view.profitabilityIndexMultipleCompany.Stable
 
 import android.annotation.SuppressLint
 import android.content.Intent

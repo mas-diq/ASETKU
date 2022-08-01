@@ -1,4 +1,4 @@
-package com.example.asetku.view.fourMethodMultipleCompany
+package com.example.asetku.view.fourMethodMultipleCompany.Stable
 
 import android.annotation.SuppressLint
 import android.content.Intent

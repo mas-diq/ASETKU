@@ -4,18 +4,18 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.databinding.ActivityMainBinding
-import com.example.asetku.view.fourMethodMultipleCompany.FourMethodStable
-import com.example.asetku.view.internalRateOfReturnMultipleCompany.InternalRateOfReturnDifferent
-import com.example.asetku.view.internalRateOfReturnMultipleCompany.InternalRateOfReturnStable
+import com.example.asetku.view.fourMethodMultipleCompany.Stable.FourMethodStable
+import com.example.asetku.view.internalRateOfReturnMultipleCompany.Different.InternalRateOfReturnDifferent
+import com.example.asetku.view.internalRateOfReturnMultipleCompany.Stable.InternalRateOfReturnStable
 import com.example.asetku.view.internalRateOfReturnOneCompany.Stable.InternalRateOfReturnOneStable
-import com.example.asetku.view.netPresentValueMultipleCompany.NetPresentValueDifferent
-import com.example.asetku.view.netPresentValueMultipleCompany.NetPresentValueStable
+import com.example.asetku.view.netPresentValueMultipleCompany.Different.NetPresentValueDifferent
+import com.example.asetku.view.netPresentValueMultipleCompany.Stable.NetPresentValueStable
 import com.example.asetku.view.netPresentValueOneCompany.Stable.NetPresentValueOneStable
-import com.example.asetku.view.paybackPeriodMultipleCompany.PaybackPeriodDifferent
-import com.example.asetku.view.paybackPeriodMultipleCompany.PaybackPeriodStable
+import com.example.asetku.view.paybackPeriodMultipleCompany.Different.PaybackPeriodDifferent
+import com.example.asetku.view.paybackPeriodMultipleCompany.Stable.PaybackPeriodStable
 import com.example.asetku.view.paybackPeriodOneCompany.Stable.PaybackPeriodOneStable
-import com.example.asetku.view.profitabilityIndexMultipleCompany.ProfitabilityIndexDifferent
-import com.example.asetku.view.profitabilityIndexMultipleCompany.ProfitabilityIndexStable
+import com.example.asetku.view.profitabilityIndexMultipleCompany.Different.ProfitabilityIndexDifferent
+import com.example.asetku.view.profitabilityIndexMultipleCompany.Stable.ProfitabilityIndexStable
 import com.example.asetku.view.profitabilityIndexOneCompany.Stable.ProfitabilityIndexOneStable
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.asetku.view.paybackPeriodMultipleCompany
+package com.example.asetku.view.paybackPeriodMultipleCompany.Stable
 
 import android.annotation.SuppressLint
 import android.content.Intent

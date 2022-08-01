@@ -8,7 +8,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityPaybackPeriodOneStableResultBinding
 import com.example.asetku.view.MainActivity
-import com.example.asetku.view.paybackPeriodMultipleCompany.PaybackPeriodStable
 import com.example.asetku.viewmodel.AccountingViewModel
 
 class PaybackPeriodOneStableResult : AppCompatActivity() {

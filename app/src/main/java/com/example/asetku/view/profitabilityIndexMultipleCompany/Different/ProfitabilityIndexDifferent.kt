@@ -1,21 +1,20 @@
-package com.example.asetku.view.netPresentValueMultipleCompany
+package com.example.asetku.view.profitabilityIndexMultipleCompany.Different
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
-import com.example.asetku.databinding.ActivityNetPresentValueDifferentBinding
-import com.example.asetku.view.MainActivity
+import com.example.asetku.databinding.ActivityProfitabilityIndexMainDifferentBinding
+import com.example.asetku.view.profitabilityIndexMultipleCompany.ProfitabilityIndexArticle
 
-class NetPresentValueDifferent : AppCompatActivity() {
+class ProfitabilityIndexDifferent : AppCompatActivity() {
 
-    private lateinit var binding: ActivityNetPresentValueDifferentBinding
+    private lateinit var binding: ActivityProfitabilityIndexMainDifferentBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityNetPresentValueDifferentBinding.inflate(layoutInflater)
+        binding = ActivityProfitabilityIndexMainDifferentBinding.inflate(layoutInflater)
         setContentView(binding.root)
         actionBar?.hide()
 
@@ -27,7 +26,7 @@ class NetPresentValueDifferent : AppCompatActivity() {
 
     private fun getInfo() {
         binding.info.setOnClickListener {
-            val move = Intent(this, NetPresentValueArticle::class.java)
+            val move = Intent(this, ProfitabilityIndexArticle::class.java)
             startActivity(move)
         }
     }
@@ -76,7 +75,7 @@ class NetPresentValueDifferent : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val move = Intent(this, NetPresentValueDifferentResult::class.java)
+                val move = Intent(this, ProfitabilityIndexDifferentResult::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
                     putString(
@@ -105,7 +104,7 @@ class NetPresentValueDifferent : AppCompatActivity() {
                     putString("cash_flow_3_1", binding.input3.textField3.textEdit.text.toString())
                     putString("cash_flow_3_2", binding.input3.textField4.textEdit.text.toString())
                     putString("cash_flow_3_3", binding.input3.textField5.textEdit.text.toString())
-                    putString("dir", "npvDifferent")
+                    putString("dir", "piDifferent")
                 }
                 move.putExtras(bundleData)
                 startActivity(move)

@@ -1,4 +1,4 @@
-package com.example.asetku.view.fourMethodMultipleCompany
+package com.example.asetku.view.fourMethodMultipleCompany.Different
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

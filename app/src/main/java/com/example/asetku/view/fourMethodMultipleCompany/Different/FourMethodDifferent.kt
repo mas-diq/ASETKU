@@ -1,4 +1,4 @@
-package com.example.asetku.view.fourMethodMultipleCompany
+package com.example.asetku.view.fourMethodMultipleCompany.Different
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityFourMethodDifferentBinding
-import com.example.asetku.view.MainActivity
-import com.example.asetku.view.netPresentValueMultipleCompany.NetPresentValueDifferentResult
+import com.example.asetku.view.fourMethodMultipleCompany.FourMethodArticle
+import com.example.asetku.view.netPresentValueMultipleCompany.Different.NetPresentValueDifferentResult
 
 class FourMethodDifferent : AppCompatActivity() {
 
@@ -62,8 +62,7 @@ class FourMethodDifferent : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, MainActivity::class.java)
-            startActivity(move)
+            onBackPressed()
         }
     }
 

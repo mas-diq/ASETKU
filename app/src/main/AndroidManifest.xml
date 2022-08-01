@@ -71,79 +71,79 @@
             android:name=".view.fourMethodMultipleCompany.FourMethodArticle"
             android:exported="false" />
         <activity
-            android:name=".view.fourMethodMultipleCompany.FourMethodDifferent"
+            android:name=".view.fourMethodMultipleCompany.Different.FourMethodDifferent"
             android:exported="false" />
         <activity
-            android:name=".view.fourMethodMultipleCompany.FourMethodDifferentResult"
+            android:name=".view.fourMethodMultipleCompany.Different.FourMethodDifferentResult"
             android:exported="false" />
         <activity
-            android:name=".view.fourMethodMultipleCompany.FourMethodStable"
+            android:name=".view.fourMethodMultipleCompany.Stable.FourMethodStable"
             android:exported="false" />
         <activity
-            android:name=".view.fourMethodMultipleCompany.FourMethodStableResult"
+            android:name=".view.fourMethodMultipleCompany.Stable.FourMethodStableResult"
             android:exported="false" />
         <activity
             android:name=".view.LoadingScreen"
             android:exported="false" />
         <activity
-            android:name=".view.internalRateOfReturnMultipleCompany.InternalRateOfReturnDifferentResult"
+            android:name=".view.internalRateOfReturnMultipleCompany.Different.InternalRateOfReturnDifferentResult"
             android:exported="false" />
         <activity
-            android:name=".view.internalRateOfReturnMultipleCompany.InternalRateOfReturnStableResult"
+            android:name=".view.internalRateOfReturnMultipleCompany.Stable.InternalRateOfReturnStableResult"
             android:exported="false" />
         <activity
-            android:name=".view.profitabilityIndexMultipleCompany.ProfitabilityIndexDifferentResult"
+            android:name=".view.profitabilityIndexMultipleCompany.Different.ProfitabilityIndexDifferentResult"
             android:exported="false" />
         <activity
-            android:name=".view.profitabilityIndexMultipleCompany.ProfitabilityIndexStableResult"
+            android:name=".view.profitabilityIndexMultipleCompany.Stable.ProfitabilityIndexStableResult"
             android:exported="false" />
         <activity
-            android:name=".view.netPresentValueMultipleCompany.NetPresentValueDifferentResult"
+            android:name=".view.netPresentValueMultipleCompany.Different.NetPresentValueDifferentResult"
             android:exported="false" />
         <activity
-            android:name=".view.netPresentValueMultipleCompany.NetPresentValueStableResult"
+            android:name=".view.netPresentValueMultipleCompany.Stable.NetPresentValueStableResult"
             android:exported="false" />
         <activity
-            android:name=".view.paybackPeriodMultipleCompany.PaybackPeriodDifferentResult"
+            android:name=".view.paybackPeriodMultipleCompany.Different.PaybackPeriodDifferentResult"
             android:exported="false" />
         <activity
             android:name=".view.internalRateOfReturnMultipleCompany.InternalRateOfReturnArticle"
             android:exported="false" />
         <activity
-            android:name=".view.internalRateOfReturnMultipleCompany.InternalRateOfReturnDifferent"
+            android:name=".view.internalRateOfReturnMultipleCompany.Different.InternalRateOfReturnDifferent"
             android:exported="false" />
         <activity
-            android:name=".view.internalRateOfReturnMultipleCompany.InternalRateOfReturnStable"
+            android:name=".view.internalRateOfReturnMultipleCompany.Stable.InternalRateOfReturnStable"
             android:exported="false" />
         <activity
             android:name=".view.netPresentValueMultipleCompany.NetPresentValueArticle"
             android:exported="false" />
         <activity
-            android:name=".view.netPresentValueMultipleCompany.NetPresentValueDifferent"
+            android:name=".view.netPresentValueMultipleCompany.Different.NetPresentValueDifferent"
             android:exported="false" />
         <activity
-            android:name=".view.netPresentValueMultipleCompany.NetPresentValueStable"
+            android:name=".view.netPresentValueMultipleCompany.Stable.NetPresentValueStable"
             android:exported="false" />
         <activity
-            android:name=".view.paybackPeriodMultipleCompany.PaybackPeriodStable"
+            android:name=".view.paybackPeriodMultipleCompany.Stable.PaybackPeriodStable"
             android:exported="true" />
         <activity
-            android:name=".view.paybackPeriodMultipleCompany.PaybackPeriodDifferent"
+            android:name=".view.paybackPeriodMultipleCompany.Different.PaybackPeriodDifferent"
             android:exported="true" />
         <activity
             android:name=".view.paybackPeriodMultipleCompany.PaybackPeriodArticle"
             android:exported="false" />
         <activity
-            android:name=".view.paybackPeriodMultipleCompany.PaybackPeriodStableResult"
+            android:name=".view.paybackPeriodMultipleCompany.Stable.PaybackPeriodStableResult"
             android:exported="false" />
         <activity
             android:name=".view.profitabilityIndexMultipleCompany.ProfitabilityIndexArticle"
             android:exported="false" />
         <activity
-            android:name=".view.profitabilityIndexMultipleCompany.ProfitabilityIndexDifferent"
+            android:name=".view.profitabilityIndexMultipleCompany.Different.ProfitabilityIndexDifferent"
             android:exported="false" />
         <activity
-            android:name=".view.profitabilityIndexMultipleCompany.ProfitabilityIndexStable"
+            android:name=".view.profitabilityIndexMultipleCompany.Stable.ProfitabilityIndexStable"
             android:exported="false" />
         <activity
             android:name=".view.SplashScreen"

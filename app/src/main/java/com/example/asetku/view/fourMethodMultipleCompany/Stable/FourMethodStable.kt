@@ -1,4 +1,4 @@
-package com.example.asetku.view.fourMethodMultipleCompany
+package com.example.asetku.view.fourMethodMultipleCompany.Stable
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityFourMethodStableBinding
-import com.example.asetku.view.MainActivity
 import com.example.asetku.view.UnderConstruction
 
 class FourMethodStable : AppCompatActivity() {
@@ -119,8 +118,7 @@ class FourMethodStable : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, MainActivity::class.java)
-            startActivity(move)
+            onBackPressed()
         }
     }
 
