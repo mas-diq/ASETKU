@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityProfitabilityIndexMainDifferentBinding
-import com.example.asetku.view.MainActivity
 
 class ProfitabilityIndexDifferent : AppCompatActivity() {
 
@@ -62,8 +61,7 @@ class ProfitabilityIndexDifferent : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, MainActivity::class.java)
-            startActivity(move)
+            onBackPressed()
         }
     }
 

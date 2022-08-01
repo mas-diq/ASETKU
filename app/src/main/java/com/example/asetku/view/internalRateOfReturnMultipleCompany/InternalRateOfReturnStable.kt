@@ -119,7 +119,6 @@ class InternalRateOfReturnStable : AppCompatActivity() {
                     )
                     putString("dir", "irrStable")
                 }
-                Log.i("Data awal", bundleData.toString())
                 move.putExtras(bundleData)
                 startActivity(move)
             }
@@ -128,8 +127,7 @@ class InternalRateOfReturnStable : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, MainActivity::class.java)
-            startActivity(move)
+            onBackPressed()
         }
     }
 

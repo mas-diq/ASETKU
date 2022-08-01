@@ -18,6 +18,8 @@
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_internal_rate_of_return_article.xml" value="0.25" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_internal_rate_of_return_different.xml" value="0.2935185185185185" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_internal_rate_of_return_different_result.xml" value="0.2935185185185185" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_internal_rate_of_return_one_stable.xml" value="0.2449074074074074" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_internal_rate_of_return_one_stable_result.xml" value="0.2449074074074074" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_internal_rate_of_return_stable.xml" value="0.25" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_internal_rate_of_return_stable_result.xml" value="0.2935185185185185" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_loading_screen.xml" value="0.32222222222222224" />
@@ -25,6 +27,8 @@
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_net_present_value_article.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_net_present_value_different.xml" value="0.25" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_net_present_value_different_result.xml" value="0.25" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_net_present_value_one_stable.xml" value="0.2449074074074074" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_net_present_value_one_stable_result.xml" value="0.1" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_net_present_value_stable.xml" value="0.22" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_net_present_value_stable_result.xml" value="0.32222222222222224" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/ASETKU/app/src/main/res/layout/activity_payback_period_article.xml" value="0.32222222222222224" />

@@ -101,8 +101,7 @@ class ProfitabilityIndexStableResult : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, ProfitabilityIndexStable::class.java)
-            startActivity(move)
+            onBackPressed()
         }
         binding.btnBack.button.setOnClickListener {
             val move = Intent(this, MainActivity::class.java)

@@ -10,7 +10,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityProfitabilityIndexOneStableResultBinding
 import com.example.asetku.view.MainActivity
-import com.example.asetku.view.profitabilityIndexMultipleCompany.ProfitabilityIndexStable
 import com.example.asetku.viewmodel.AccountingViewModel
 
 class ProfitabilityIndexOneStableResult : AppCompatActivity() {
@@ -60,8 +59,7 @@ class ProfitabilityIndexOneStableResult : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, ProfitabilityIndexStable::class.java)
-            startActivity(move)
+            onBackPressed()
         }
         binding.btnBack.button.setOnClickListener {
             val move = Intent(this, MainActivity::class.java)

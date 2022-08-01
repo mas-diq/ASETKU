@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityPaybackPeriodOneStableBinding
-import com.example.asetku.view.MainActivity
 import com.example.asetku.view.paybackPeriodMultipleCompany.PaybackPeriodArticle
 
 class PaybackPeriodOneStable : AppCompatActivity() {
@@ -57,8 +56,7 @@ class PaybackPeriodOneStable : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, MainActivity::class.java)
-            startActivity(move)
+            onBackPressed()
         }
     }
 

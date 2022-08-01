@@ -58,8 +58,7 @@ class NetPresentValueOneStableResult : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, NetPresentValueStable::class.java)
-            startActivity(move)
+            onBackPressed()
         }
         binding.btnBack.button.setOnClickListener {
             val move = Intent(this, MainActivity::class.java)
