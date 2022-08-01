@@ -40,7 +40,6 @@ class NetPresentValueDifferentResult : AppCompatActivity() {
                 extras.getString("cash_flow_1_1")!!.toDouble(),
                 extras.getString("cash_flow_1_2")!!.toDouble(),
                 extras.getString("cash_flow_1_3")!!.toDouble()
-
             )
             val commpany_2: Double = viewModel.NPVdifferentCount(
                 extras.getString("initialInvestment_2")!!.toDouble(),

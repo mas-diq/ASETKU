@@ -17,6 +17,7 @@ class ProfitabilityIndexDifferentResult : AppCompatActivity() {
     lateinit var binding: ActivityProfitabilityIndexDifferentResultBinding
     private lateinit var viewModel: AccountingViewModel
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this)[AccountingViewModel::class.java]

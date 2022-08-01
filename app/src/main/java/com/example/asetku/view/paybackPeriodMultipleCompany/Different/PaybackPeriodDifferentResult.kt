@@ -34,29 +34,29 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     private fun getData(extras: Bundle?) {
         if (extras != null) {
-            val commpany_1: Double = viewModel.PPdifferentCount(
+            val company1: Double = viewModel.PPdifferentCount(
                 extras.getString("initialInvestment_1")!!.toDouble(),
                 extras.getString("cash_flow_1_1")!!.toDouble(),
                 extras.getString("cash_flow_1_2")!!.toDouble(),
                 extras.getString("cash_flow_1_3")!!.toDouble()
 
             )
-            val commpany_2: Double = viewModel.PPdifferentCount(
+            val company2: Double = viewModel.PPdifferentCount(
                 extras.getString("initialInvestment_2")!!.toDouble(),
                 extras.getString("cash_flow_2_1")!!.toDouble(),
                 extras.getString("cash_flow_2_2")!!.toDouble(),
                 extras.getString("cash_flow_2_3")!!.toDouble()
 
             )
-            val commpany_3: Double = viewModel.PPdifferentCount(
+            val company3: Double = viewModel.PPdifferentCount(
                 extras.getString("initialInvestment_3")!!.toDouble(),
                 extras.getString("cash_flow_3_1")!!.toDouble(),
                 extras.getString("cash_flow_3_2")!!.toDouble(),
                 extras.getString("cash_flow_3_3")!!.toDouble()
             )
-            val result_1 = String.format("%.3f", commpany_1).toDouble()
-            val result_2 = String.format("%.3f", commpany_2).toDouble()
-            val result_3 = String.format("%.3f", commpany_3).toDouble()
+            val result_1 = String.format("%.3f", company1).toDouble()
+            val result_2 = String.format("%.3f", company2).toDouble()
+            val result_3 = String.format("%.3f", company3).toDouble()
 
             if (result_1 <= 0) {
                 binding.result.tvPerusahaan1Value.setTextColor(getColor(R.color.red))
@@ -82,9 +82,9 @@ class PaybackPeriodDifferentResult : AppCompatActivity() {
                 binding.result.tvPerusahaan3Value.text = "Payback Period = $result_3 Years"
             }
 
-            if (commpany_1 <= commpany_2 && commpany_1 <= commpany_3) {
+            if (company1 <= company2 && company1 <= company3) {
                 binding.recommendation.textValue.text = getString(R.string.company_1)
-            } else if (commpany_2 <= commpany_3) {
+            } else if (company2 <= company3) {
                 binding.recommendation.textValue.text = getString(R.string.company_2)
             } else {
                 binding.recommendation.textValue.text = getString(R.string.company_3)

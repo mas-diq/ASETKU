@@ -45,7 +45,6 @@ class InternalRateOfReturnDifferentResult : AppCompatActivity() {
                 extras.getString("cashFlow_1_2_1")!!.toDouble(),
                 extras.getString("cashFlow_1_2_2")!!.toDouble(),
                 extras.getString("cashFlow_1_2_3")!!.toDouble()
-
             )
             val commpany_2: Double = viewModel.IRRdifferentCount(
                 extras.getString("initialInvestment_2_1")!!.toDouble(),

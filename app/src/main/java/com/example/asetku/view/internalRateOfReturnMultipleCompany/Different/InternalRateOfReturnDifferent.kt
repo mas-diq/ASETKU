@@ -14,7 +14,6 @@ class InternalRateOfReturnDifferent : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityInternalRateOfReturnDifferentBinding.inflate(layoutInflater)
         setContentView(binding.root)
         actionBar?.hide()
