@@ -1,4 +1,4 @@
-package com.example.asetku.view.profitabilityIndexMultipleCompany
+package com.example.asetku.view.profitabilityIndexMultipleCompany.Different
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -17,6 +17,7 @@ class ProfitabilityIndexDifferentResult : AppCompatActivity() {
     lateinit var binding: ActivityProfitabilityIndexDifferentResultBinding
     private lateinit var viewModel: AccountingViewModel
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this)[AccountingViewModel::class.java]
@@ -105,8 +106,7 @@ class ProfitabilityIndexDifferentResult : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, ProfitabilityIndexDifferent::class.java)
-            startActivity(move)
+            onBackPressed()
         }
         binding.btnBack.button.setOnClickListener {
             val move = Intent(this, MainActivity::class.java)

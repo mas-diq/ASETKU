@@ -90,7 +90,7 @@
             app:cardCornerRadius="24dp"
             app:layout_constraintEnd_toStartOf="@+id/cardView_npv"
             app:layout_constraintStart_toStartOf="@+id/cardView2"
-            app:layout_constraintTop_toBottomOf="@+id/switch1">
+            app:layout_constraintTop_toBottomOf="@+id/CashFlowSwitch">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -447,13 +447,50 @@
             android:fontFamily="@font/montserrat_semi_bold"
             android:text="Stable Cash Flow"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/switch1"
-            app:layout_constraintEnd_toStartOf="@+id/switch1"
+            app:layout_constraintBottom_toBottomOf="@+id/CashFlowSwitch"
+            app:layout_constraintEnd_toStartOf="@+id/CashFlowSwitch"
             app:layout_constraintStart_toStartOf="@+id/cardView2"
-            app:layout_constraintTop_toTopOf="@+id/switch1" />
+            app:layout_constraintTop_toTopOf="@+id/CashFlowSwitch" />
 
         <Switch
-            android:id="@+id/switch1"
+            android:id="@+id/CashFlowSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text=""
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/CommpanySwitch"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Different Cash Flow"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/CashFlowSwitch"
+            app:layout_constraintEnd_toEndOf="@+id/cardView2"
+            app:layout_constraintStart_toEndOf="@+id/CashFlowSwitch"
+            app:layout_constraintTop_toTopOf="@+id/CashFlowSwitch" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="One Companny"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/CommpanySwitch"
+            app:layout_constraintEnd_toStartOf="@+id/CashFlowSwitch"
+            app:layout_constraintStart_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toTopOf="@+id/CommpanySwitch" />
+
+        <Switch
+            android:id="@+id/CommpanySwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -466,16 +503,16 @@
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textView22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semi_bold"
-            android:text="Different Cash Flow"
+            android:text="Three Company"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/switch1"
+            app:layout_constraintBottom_toBottomOf="@+id/CommpanySwitch"
             app:layout_constraintEnd_toEndOf="@+id/cardView2"
-            app:layout_constraintStart_toEndOf="@+id/switch1"
-            app:layout_constraintTop_toTopOf="@+id/switch1" />
+            app:layout_constraintStart_toEndOf="@+id/CashFlowSwitch"
+            app:layout_constraintTop_toTopOf="@+id/CommpanySwitch" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

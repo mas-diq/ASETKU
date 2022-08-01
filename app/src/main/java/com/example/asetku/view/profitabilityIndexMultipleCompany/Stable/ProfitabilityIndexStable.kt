@@ -1,20 +1,20 @@
-package com.example.asetku.view.paybackPeriodMultipleCompany
+package com.example.asetku.view.profitabilityIndexMultipleCompany.Stable
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
-import com.example.asetku.databinding.ActivityPaybackPeriodStableBinding
-import com.example.asetku.view.MainActivity
+import com.example.asetku.databinding.ActivityProfitabilityIndexMainStableBinding
+import com.example.asetku.view.profitabilityIndexMultipleCompany.ProfitabilityIndexArticle
 
-class PaybackPeriodStable : AppCompatActivity() {
+class ProfitabilityIndexStable : AppCompatActivity() {
 
-    private lateinit var binding: ActivityPaybackPeriodStableBinding
+    private lateinit var binding: ActivityProfitabilityIndexMainStableBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityPaybackPeriodStableBinding.inflate(layoutInflater)
+        binding = ActivityProfitabilityIndexMainStableBinding.inflate(layoutInflater)
         setContentView(binding.root)
         actionBar?.hide()
 
@@ -26,14 +26,7 @@ class PaybackPeriodStable : AppCompatActivity() {
 
     private fun getInfo() {
         binding.info.setOnClickListener {
-            val move = Intent(this, PaybackPeriodArticle::class.java)
-            startActivity(move)
-        }
-    }
-
-    private fun back() {
-        binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, MainActivity::class.java)
+            val move = Intent(this, ProfitabilityIndexArticle::class.java)
             startActivity(move)
         }
     }
@@ -47,7 +40,7 @@ class PaybackPeriodStable : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val move = Intent(this, PaybackPeriodStableResult::class.java)
+                val move = Intent(this, ProfitabilityIndexStableResult::class.java)
                 val bundleData = Bundle()
                 bundleData.apply {
                     putString(
@@ -55,23 +48,35 @@ class PaybackPeriodStable : AppCompatActivity() {
                         binding.input1.textField1.textEdit.text.toString()
                     )
                     putString("cashFlow_1", binding.input1.textField2.textEdit.text.toString())
+                    putString("year_1", binding.input1.textField3.textEdit.text.toString())
+                    putString("discountRate_1", binding.input1.textField4.textEdit.text.toString())
 
                     putString(
                         "initialInvestment_2",
                         binding.input2.textField1.textEdit.text.toString()
                     )
                     putString("cashFlow_2", binding.input2.textField2.textEdit.text.toString())
+                    putString("year_2", binding.input2.textField3.textEdit.text.toString())
+                    putString("discountRate_2", binding.input2.textField4.textEdit.text.toString())
 
                     putString(
                         "initialInvestment_3",
                         binding.input3.textField1.textEdit.text.toString()
                     )
                     putString("cashFlow_3", binding.input3.textField2.textEdit.text.toString())
-                    putString("dir", "ppStable")
+                    putString("year_3", binding.input3.textField3.textEdit.text.toString())
+                    putString("discountRate_3", binding.input3.textField4.textEdit.text.toString())
+                    putString("dir", "piStable")
                 }
                 move.putExtras(bundleData)
                 startActivity(move)
             }
+        }
+    }
+
+    private fun back() {
+        binding.header.iconBack.setOnClickListener {
+            onBackPressed()
         }
     }
 
@@ -83,24 +88,36 @@ class PaybackPeriodStable : AppCompatActivity() {
         binding.input2.textViewTitle.text = getString(R.string.company_1)
         binding.input1.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input1.textField2.textField.hint = getString(R.string.cash_flow)
+        binding.input1.textField3.textField.hint = getString(R.string.year)
+        binding.input1.textField4.textField.hint = getString(R.string.discount_rate)
 
         // Perusahaan 2
         binding.input2.textViewTitle.text = getString(R.string.company_2)
         binding.input2.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input2.textField2.textField.hint = getString(R.string.cash_flow)
+        binding.input2.textField3.textField.hint = getString(R.string.year)
+        binding.input2.textField4.textField.hint = getString(R.string.discount_rate)
 
         // Perusahaan 3
         binding.input3.textViewTitle.text = getString(R.string.company_3)
         binding.input3.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input3.textField2.textField.hint = getString(R.string.cash_flow)
+        binding.input3.textField3.textField.hint = getString(R.string.year)
+        binding.input3.textField4.textField.hint = getString(R.string.discount_rate)
     }
 
     private fun checkNull(): Boolean {
         return binding.input1.textField1.textEdit.text.isNullOrBlank() ||
                 binding.input1.textField2.textEdit.text.isNullOrBlank() ||
+                binding.input1.textField3.textEdit.text.isNullOrBlank() ||
+                binding.input1.textField4.textEdit.text.isNullOrBlank() ||
                 binding.input2.textField1.textEdit.text.isNullOrBlank() ||
                 binding.input2.textField2.textEdit.text.isNullOrBlank() ||
+                binding.input2.textField3.textEdit.text.isNullOrBlank() ||
+                binding.input2.textField4.textEdit.text.isNullOrBlank() ||
                 binding.input3.textField1.textEdit.text.isNullOrBlank() ||
-                binding.input3.textField2.textEdit.text.isNullOrBlank()
+                binding.input3.textField2.textEdit.text.isNullOrBlank() ||
+                binding.input3.textField3.textEdit.text.isNullOrBlank() ||
+                binding.input3.textField4.textEdit.text.isNullOrBlank()
     }
 }

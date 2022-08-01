@@ -1,4 +1,4 @@
-package com.example.asetku.view.paybackPeriodMultipleCompany
+package com.example.asetku.view.paybackPeriodMultipleCompany.Stable
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -33,7 +33,6 @@ class PaybackPeriodStableResult : AppCompatActivity() {
             val commpany_1: Double = viewModel.PPstableCount(
                 extras.getString("initialInvestment_1")!!.toDouble(),
                 extras.getString("cashFlow_1")!!.toDouble(),
-
             )
             val commpany_2: Double = viewModel.PPstableCount(
                 extras.getString("initialInvestment_2")!!.toDouble(),
@@ -64,8 +63,7 @@ class PaybackPeriodStableResult : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, PaybackPeriodStable::class.java)
-            startActivity(move)
+            onBackPressed()
         }
         binding.btnBack.button.setOnClickListener {
             val move = Intent(this, MainActivity::class.java)
@@ -76,5 +74,4 @@ class PaybackPeriodStableResult : AppCompatActivity() {
     private fun changeData() {
         binding.header.textView.text = getString(R.string.stable_title)
     }
-
 }

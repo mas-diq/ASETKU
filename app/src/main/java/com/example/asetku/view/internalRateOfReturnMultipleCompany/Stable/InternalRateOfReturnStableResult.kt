@@ -1,4 +1,4 @@
-package com.example.asetku.view.internalRateOfReturnMultipleCompany
+package com.example.asetku.view.internalRateOfReturnMultipleCompany.Stable
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -114,8 +114,7 @@ class InternalRateOfReturnStableResult : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, InternalRateOfReturnStable::class.java)
-            startActivity(move)
+            onBackPressed()
         }
         binding.btnBack.button.setOnClickListener {
             val move = Intent(this, MainActivity::class.java)

@@ -1,4 +1,4 @@
-package com.example.asetku.view.internalRateOfReturnMultipleCompany
+package com.example.asetku.view.internalRateOfReturnMultipleCompany.Different
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -45,7 +45,6 @@ class InternalRateOfReturnDifferentResult : AppCompatActivity() {
                 extras.getString("cashFlow_1_2_1")!!.toDouble(),
                 extras.getString("cashFlow_1_2_2")!!.toDouble(),
                 extras.getString("cashFlow_1_2_3")!!.toDouble()
-
             )
             val commpany_2: Double = viewModel.IRRdifferentCount(
                 extras.getString("initialInvestment_2_1")!!.toDouble(),
@@ -121,8 +120,7 @@ class InternalRateOfReturnDifferentResult : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, InternalRateOfReturnStable::class.java)
-            startActivity(move)
+            onBackPressed()
         }
         binding.btnBack.button.setOnClickListener {
             val move = Intent(this, MainActivity::class.java)

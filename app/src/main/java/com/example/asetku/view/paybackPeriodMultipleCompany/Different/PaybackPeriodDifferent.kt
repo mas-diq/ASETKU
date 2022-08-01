@@ -1,4 +1,4 @@
-package com.example.asetku.view.paybackPeriodMultipleCompany
+package com.example.asetku.view.paybackPeriodMultipleCompany.Different
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.asetku.R
 import com.example.asetku.databinding.ActivityPaybackPeriodDifferentBinding
-import com.example.asetku.view.MainActivity
+import com.example.asetku.view.paybackPeriodMultipleCompany.PaybackPeriodArticle
 
 class PaybackPeriodDifferent : AppCompatActivity() {
 
@@ -36,7 +36,7 @@ class PaybackPeriodDifferent : AppCompatActivity() {
         binding.header.textView.text = getString(R.string.different_title)
 
         // Perusahaan 1
-        binding.input2.textViewTitle.text = getString(R.string.company_1)
+        binding.input1.textViewTitle.text = getString(R.string.company_1)
         binding.input1.textField1.textField.hint = getString(R.string.initial_investment)
         binding.input1.textField2.textField.hint = getString(R.string.cash_flow_1)
         binding.input1.textField3.textField.hint = getString(R.string.cash_flow_2)
@@ -59,8 +59,7 @@ class PaybackPeriodDifferent : AppCompatActivity() {
 
     private fun back() {
         binding.header.iconBack.setOnClickListener {
-            val move = Intent(this, MainActivity::class.java)
-            startActivity(move)
+            onBackPressed()
         }
     }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.netPresentValueMultipleCompany.NetPresentValueStableResult">
+    tools:context=".view.netPresentValueMultipleCompany.Stable.NetPresentValueStableResult">
 
     <ImageView
         android:id="@+id/imageView2"
