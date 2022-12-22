@@ -5,7 +5,7 @@
   <br>
   <img  width="1280px" src="https://raw.githubusercontent.com/mas-diq/ASETKU/master/Cover.png" />
   <h3 align="center">Your accurate personal investment calculator</h3>
-  <p align="center">
+  <p align="justify">
     Assetku is an application developed by group 2 to fulfill the final project of the Computerized Financial Accounting Course. The methods that can be used in this application are Payback Period (PP), Net Present Value (NPV), Profitability Index (PI) and Internal Rate of Return (IRR).
     <br />
     <a href="https://github.com/mas-diq/ASETKU"><strong>Explore the docs »</strong></a>
@@ -18,13 +18,13 @@
 ## Project's Prototype :star2:
 
 <p align="center">
-<img width="180px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_1.jpg"> 
-<img width="180px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_2.jpg"> 
-<img width="180px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_3.jpg"> 
-<img width="180px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_4.jpg"> 
-<img width="180px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_5.jpg"> 
-<img width="180px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_6.jpg"> 
-<img width="180px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_7.jpg"> 
+<img width="164px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_1.jpg"> 
+<img width="164px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_2.jpg"> 
+<img width="164px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_3.jpg"> 
+<img width="164px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_4.jpg"> 
+<img width="164px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_5.jpg"> 
+<img width="164px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_6.jpg"> 
+<img width="164px" src="https://github.com/mas-diq/ASETKU/blob/master/SS_ASETKU_7.jpg"> 
 </p>
 <br>
 
@@ -52,11 +52,14 @@ These are some of the tools used to build Asetku Apps.
 * [LottieFiles](https://lottiefiles.com/)
   <br>
 
-## Get in Touch :dizzy:
+[//]: # (## Get in Touch :dizzy:)
 
-You can run the following project by creating a fork from the repository, or simply by downloading
-it via the following link [https://bit.ly/asetku_latest](https://bit.ly/asetku_latest)
-<br>
+[//]: # ()
+[//]: # (You can run the following project by creating a fork from the repository, or simply by downloading)
+
+[//]: # (it via the following link [https://bit.ly/asetku_latest]&#40;https://bit.ly/asetku_latest&#41;)
+
+[//]: # (<br>)
 
 ## Contributing :mortar_board:
 
